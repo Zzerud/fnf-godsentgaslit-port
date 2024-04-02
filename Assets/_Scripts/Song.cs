@@ -3102,32 +3102,6 @@ public class Song : MonoBehaviour
             
             
 
-            if (!Player.playAsEnemy)
-            {
-                if (accuracyBf <= 20)
-                {
-                    GetAchievment.instance.GetAchiv(3);
-                }
-                else if (accuracyBf >= 90)
-                {
-                    GetAchievment.instance.GetAchiv(4);
-                }
-
-                if (currentSong.songName == "fear-forever" && !MainEventSystem.instance.isPressedMangle)
-                {
-                    GetAchievment.instance.GetAchiv(9);
-                }
-
-                if((currentSong.songName == "fear-forever" || currentSong.songName == "everlasting") && !MainEventSystem.instance.isRepairSystems)
-                {
-                    GetAchievment.instance.GetAchiv(8);
-                }
-
-                if (currentSong.songName == "fear-forever" && !MainEventSystem.instance.isPressedMangle && !MainEventSystem.instance.isRepairSystems)
-                {
-                    GetAchievment.instance.GetAchiv(10);
-                }
-            }
             
 
             if (weekMode & !_quitting)
@@ -3158,17 +3132,6 @@ public class Song : MonoBehaviour
             }
             else
             {
-                if (!Player.playAsEnemy)
-                {
-                    if (currentSong.songName == "until-next-time")
-                    {
-                        GetAchievment.instance.GetAchiv(7);
-                    }
-                    else if (currentSong.songName == "out-of-bounds")
-                    {
-                        GetAchievment.instance.GetAchiv(6);
-                    }
-                }
                 
 
                 Debug.LogWarning("DoneEnd");

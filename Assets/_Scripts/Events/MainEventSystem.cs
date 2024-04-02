@@ -397,96 +397,15 @@ public class MainEventSystem : MonoBehaviour
 
     #endregion
 
+    public Animator critters;
 
-    public GameObject statics;
-    public Graphic redStatic, whiteStatic, staticss;
-    public void Static(string staticNum) // 0 - toggle static, 1 - toggle red static, 2 - toggle 1 white static, 3 - off static
-    {
-        int s = int.Parse(staticNum, System.Globalization.NumberStyles.Number, System.Globalization.CultureInfo.InvariantCulture);
-        switch (s)
-        {
-            case 0:
-                statics.SetActive(true);
-                redStatic.CrossFadeAlpha(0, 0, false);
-                whiteStatic.CrossFadeAlpha(0, 0f, false);
-                staticss.CrossFadeAlpha(1, 0f, false);
-                break;
-            case 1:
-                redStatic.CrossFadeAlpha(1, 0, false);
-                redStatic.CrossFadeAlpha(0, 2, false);
-                break;
-            case 2:
-                whiteStatic.CrossFadeAlpha(0, 0, false);
-                whiteStatic.CrossFadeAlpha(1, 1f, false);
-                break;
-            case 3:
-                redStatic.CrossFadeAlpha(0, 0, false);
-                whiteStatic.CrossFadeAlpha(0, 0f, false);
-                staticss.CrossFadeAlpha(1, 0f, false);
-                statics.SetActive(false);
-                break;
-            case 4:
-                statics.SetActive(true);
-                redStatic.CrossFadeAlpha(0, 0, false);
-                whiteStatic.CrossFadeAlpha(0, 0f, false);
-                staticss.CrossFadeAlpha(0, 0f, false);
-                staticss.CrossFadeAlpha(0.7f, 2f, false);
-                break;
-        }
-    }
-    public void SongCredit(string songName)
-    {
-        creditMenu.SetTrigger(songName);
-    }
+
     public void InGameAnimation(string animationName)
     {
         inGameAnimation.SetTrigger(animationName);
     }
-    public Animator mangle;
-    public AudioSource mangleSounds;
-    public Animator tablet;
-    public GameObject tabletObj;
-    bool tabletClick = false;
-    public Animator puppet;
-    public GameObject fireMaterial;
 
-    public bool isPressedMangle = false;
-    public bool isRepairSystems = false;
-    public void Mangle()
-    {
-        mangle.ResetTrigger("out");
-        mangle.SetTrigger("in");
-        if(Player.playAsEnemy)
-            mangle.gameObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(-520, mangle.gameObject.GetComponent<RectTransform>().anchoredPosition.y);
-        if(OptionsV2.Middlescroll)
-            mangle.gameObject.GetComponent<RectTransform>().anchoredPosition = new Vector2(-260, mangle.gameObject.GetComponent<RectTransform>().anchoredPosition.y);
-        mangleSounds.Play();
-    }
-    public void DisableMangle()
-    {
-        mangle.SetTrigger("out");
-        isPressedMangle = true;
-        mangleSounds.Stop();
-    }
-    public void JumpScare(string name)
-    {
-        jumpScare.gameObject.SetActive(true);
-        jumpScare.SetTrigger(name);
-    }
-    
-    public void OnTablet()
-    {
-        tablet.SetTrigger("OnTable");
-        tablet.ResetTrigger("Open");
-        StartCoroutine(ConsequencesRed());
-        StartCoroutine(ConsequencesBLack());
-        /*if (isTablet)
-        {
-            isTablet = false;
-            tabletClick = false;
-            tablet.gameObject.SetActive(false);
-        }*/
-    }
+
     IEnumerator ConsequencesRed()
     {
         while (true)
@@ -506,46 +425,21 @@ public class MainEventSystem : MonoBehaviour
             yield return new WaitForSeconds(1f);
         }
     }
-    public void OnClickUpdateTablet()
-    {
-        tablet.SetTrigger("Open");
-        tablet.ResetTrigger("OnTable");
-    }
-    public void OnClickTablet()
-    {
-        if (!tabletClick)
-        {
-            tabletClick = true;
-            tablet.SetTrigger("RestartingSystem");
-            tablet.ResetTrigger("OnTable");
-            LeanTween.delayedCall(3f, () =>
-            {
-                StopCoroutine(ConsequencesRed());
-                StopCoroutine(ConsequencesBLack());
-                StopAllCoroutines();
-                StopAllCoroutines();
-                isRepairSystems = true;
-                blackConsequences.CrossFadeAlpha(0f, 0f, false);
-                redConsequences.CrossFadeAlpha(0f, 0f, false);
-                tabletClick = false;
-            });
-        }
-    }
-    public void Puppet()
-    {
-        if (Player.playAsEnemy)
-        {
-            puppet.SetBool("Left", true);
-        }
 
-        if (OptionsV2.Middlescroll)
-        {
-            puppet.SetBool("Middle", true);
-        }
-        else
-        {
-            puppet.SetBool("Middle", false);
-        }
-        puppet.SetTrigger("Puppet");
+    public void Critters(int index)
+    {
+        critters.ResetTrigger("1");
+        critters.ResetTrigger("2");
+        critters.ResetTrigger("3");
+        critters.ResetTrigger("out");
+        critters.SetTrigger(index);
     }
+    public void OnCrittersOut()
+    {
+        critters.ResetTrigger("1");
+        critters.ResetTrigger("2");
+        critters.ResetTrigger("3");
+        critters.SetTrigger("out");
+    }
+
 }

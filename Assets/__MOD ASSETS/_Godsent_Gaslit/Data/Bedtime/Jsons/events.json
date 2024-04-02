@@ -5,9 +5,7 @@
 				0,
 				[
 					[
-						"Videoplayer",
-						"start",
-						"true"
+						"StartGame"
 					]
 				]
 			],
@@ -15,29 +13,9 @@
 				1095.8904109589,
 				[
 					[
-						"fadeout",
-						"black",
-						"1"
-					]
-				]
-			],
-			[
-				1643.83561643836,
-				[
-					[
-						"Edit Shadow",
-						"dad",
-						"false"
-					]
-				]
-			],
-			[
-				2191.78082191781,
-				[
-					[
-						"Cinematics (With HUD)",
-						"1",
-						"70"
+						"ChangeWhiteFade",
+						"outBlack",
+						"1.001"
 					]
 				]
 			],
@@ -45,24 +23,7 @@
 				4383.56164383562,
 				[
 					[
-						"Toggle Zoom on Beat",
-						"0.02, 0.02",
-						"On"
-					],
-					[
-						"fadeout",
-						"white",
-						"1"
-					],
-					[
-						"Hud Fade",
-						"1",
-						"10"
-					],
-					[
-						"OpponentNotesFade",
-						"2",
-						"0.1"
+						"EndFirstVid"
 					]
 				]
 			],
@@ -70,9 +31,9 @@
 				5479.45205479452,
 				[
 					[
-						"fadein",
-						"bedtime",
-						"1"
+						"InGameAnimaton",
+						"Bedtime",
+						"MainEvent"
 					]
 				]
 			],

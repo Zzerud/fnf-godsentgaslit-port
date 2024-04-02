@@ -27,6 +27,10 @@ public class BedtimeScript : MonoBehaviour
 
         whiteFlash.DOFade(0, 0);
         blackFlash.DOFade(1, 0);
+
+        VideoPlayedInstance.instance.clip = firstSceneClip;
+        VideoPlayedInstance.instance.player.clip = firstSceneClip;
+        VideoPlayedInstance.instance.player.Prepare();
     }
     public void ChangeWhiteFade(string fadeType, string time)
     {
@@ -65,7 +69,24 @@ public class BedtimeScript : MonoBehaviour
         }
     }
 
+    public void StartGame()
+    {
+        VideoPlayedInstance.instance.raw.SetActive(true);
+        VideoPlayedInstance.instance.player.Play();
+    }
+    public void EndFirstVid()
+    {
+        VideoPlayedInstance.instance.raw.SetActive(false);
+        VideoPlayedInstance.instance.player.Stop();
+        CameraShake.instance.Flash("1.001");
 
+        //Later lol
+        /*[
+						"Toggle Zoom on Beat",
+						"0.02, 0.02",
+						"On"
+					],*/
+    }
 
 
     #region NeedToAllOfScripts

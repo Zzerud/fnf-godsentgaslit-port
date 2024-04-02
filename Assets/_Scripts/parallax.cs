@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class parallax : MonoBehaviour
 {
+    public bool isUi;
     [SerializeField] private float speed;
     [SerializeField] private bool scrollLeft;
     float width;
@@ -16,21 +17,40 @@ public class parallax : MonoBehaviour
     }
     private void SetupTexture()
     {
-        Sprite sprite = GetComponent<Image>().sprite;
+        Sprite sprite;
+        if (!isUi)
+            sprite = GetComponent<SpriteRenderer>().sprite;
+        else
+            sprite = GetComponent<Image>().sprite;
+
         width = sprite.texture.width / sprite.pixelsPerUnit;
     }
 
     private void Scroll()
     {
         float delta = speed * Time.deltaTime;
-        transform.localPosition += new Vector3(delta, 0, 0);
+        if(isUi)
+            transform.localPosition += new Vector3(delta, 0, 0);
+        else
+            transform.position += new Vector3(delta, 0, 0);
     }
 
     private void CheckReset()
     {
-        if((Mathf.Abs(transform.localPosition.x) - width) > 1000)
+        if (isUi)
         {
-            transform.localPosition = new Vector3(0, transform.localPosition.y, transform.localPosition.z);
+            if ((Mathf.Abs(transform.localPosition.x) - width) > 1000)
+            {
+                transform.localPosition = new Vector3(0, transform.localPosition.y, transform.localPosition.z);
+            }
+
+        }
+        else
+        {
+            if ((Mathf.Abs(transform.position.x) - width) > 1)
+            {
+                transform.localPosition = new Vector3(0, transform.position.y, transform.position.z);
+            }
         }
     }
 
