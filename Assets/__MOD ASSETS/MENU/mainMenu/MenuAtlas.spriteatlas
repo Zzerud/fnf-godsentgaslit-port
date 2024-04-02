@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: MenuAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 4096
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 49
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 45543a54dbff7fc4f868a1e37a8786aa, type: 3}
+    - {fileID: 2800000, guid: 837df9f20370d1c4085426a61fdccdf6, type: 3}
+    - {fileID: 2800000, guid: 73169569b8c93634a9a25adab7e9b1b7, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 837df9f20370d1c4085426a61fdccdf6: -3474500315554324179
+    - 837df9f20370d1c4085426a61fdccdf6: 8933166754687889788
+    - 45543a54dbff7fc4f868a1e37a8786aa: -7425098515418101428
+    - 45543a54dbff7fc4f868a1e37a8786aa: -142366358611159796
+    - 73169569b8c93634a9a25adab7e9b1b7: 4410586319385277458
+    - 73169569b8c93634a9a25adab7e9b1b7: 464089639710267281
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: -3474500315554324179, guid: 837df9f20370d1c4085426a61fdccdf6, type: 3}
+  - {fileID: 8933166754687889788, guid: 837df9f20370d1c4085426a61fdccdf6, type: 3}
+  - {fileID: -7425098515418101428, guid: 45543a54dbff7fc4f868a1e37a8786aa, type: 3}
+  - {fileID: -142366358611159796, guid: 45543a54dbff7fc4f868a1e37a8786aa, type: 3}
+  - {fileID: 4410586319385277458, guid: 73169569b8c93634a9a25adab7e9b1b7, type: 3}
+  - {fileID: 464089639710267281, guid: 73169569b8c93634a9a25adab7e9b1b7, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - options small0000
+  - options big0000
+  - credits small0000
+  - credits big0000
+  - start small0000
+  - start big0000
+  m_RenderDataMap: {}
+  m_Tag: MenuAtlas
+  m_IsVariant: 0

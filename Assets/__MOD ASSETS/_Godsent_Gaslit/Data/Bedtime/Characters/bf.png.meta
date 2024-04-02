@@ -1,0 +1,1460 @@
+fileFormatVersion: 2
+guid: 57af0df4f4c849c4fa6d4a5b2b5c1835
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: 51
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 1
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BF idle dance0000
+      rect:
+        serializedVersion: 2
+        x: 3752
+        y: 3693
+        width: 712
+        height: 561
+      alignment: 9
+      pivot: {x: -0.12780899, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e2a26e559953ba820800000000000000
+      internalID: 2930494915222055470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF idle dance0001
+      rect:
+        serializedVersion: 2
+        x: 4478
+        y: 2080
+        width: 722
+        height: 546
+      alignment: 9
+      pivot: {x: -0.14819944, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7e40bc1a8e6902d00800000000000000
+      internalID: 945921847638820071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF idle dance0002
+      rect:
+        serializedVersion: 2
+        x: 4478
+        y: 3174
+        width: 726
+        height: 548
+      alignment: 9
+      pivot: {x: -0.1446281, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6e9ad6de859eef380800000000000000
+      internalID: -8935448042506704410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF idle dance0003
+      rect:
+        serializedVersion: 2
+        x: 3056
+        y: 555
+        width: 729
+        height: 557
+      alignment: 9
+      pivot: {x: -0.13305898, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 231e178713601b990800000000000000
+      internalID: -7372104305484897998
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF idle dance0004
+      rect:
+        serializedVersion: 2
+        x: 1515
+        y: 545
+        width: 730
+        height: 567
+      alignment: 9
+      pivot: {x: -0.11917808, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 94945b5597621cb00800000000000000
+      internalID: 847000507493206345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF idle dance0005
+      rect:
+        serializedVersion: 2
+        x: 3752
+        y: 4254
+        width: 726
+        height: 575
+      alignment: 9
+      pivot: {x: -0.10606061, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bb0b6070e3aba8770800000000000000
+      internalID: 8613902012868112571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF idle dance0006
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 1116
+        width: 715
+        height: 581
+      alignment: 9
+      pivot: {x: -0.0993007, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f94f085c4383c1620800000000000000
+      internalID: 2746131672092177567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF idle dance0007
+      rect:
+        serializedVersion: 2
+        x: 676
+        y: 1113
+        width: 703
+        height: 584
+      alignment: 9
+      pivot: {x: -0.09530583, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9750c214c0af9f840800000000000000
+      internalID: 5258508970471720313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF idle dance0008
+      rect:
+        serializedVersion: 2
+        x: 2078
+        y: 1704
+        width: 691
+        height: 585
+      alignment: 9
+      pivot: {x: -0.09406657, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7bd1210464af4b60800000000000000
+      internalID: 7732579834641111931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF idle dance0009
+      rect:
+        serializedVersion: 2
+        x: 2769
+        y: 1704
+        width: 682
+        height: 585
+      alignment: 9
+      pivot: {x: -0.09530792, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4436cb0e1b54404d0800000000000000
+      internalID: -3169331607480016060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF idle dance0010
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1112
+        width: 676
+        height: 585
+      alignment: 9
+      pivot: {x: -0.09615385, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1b9e92f502f4feba0800000000000000
+      internalID: -6057535973335897679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF idle dance0011
+      rect:
+        serializedVersion: 2
+        x: 1379
+        y: 1113
+        width: 671
+        height: 584
+      alignment: 9
+      pivot: {x: -0.09687034, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83500ad16d8489110800000000000000
+      internalID: 1267843379562022200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note LEFT0000
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 2292
+        width: 714
+        height: 596
+      alignment: 9
+      pivot: {x: -0.009803922, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7862fa8caf925920800000000000000
+      internalID: 2977617867059652731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note LEFT0001
+      rect:
+        serializedVersion: 2
+        x: 1192
+        y: 2914
+        width: 705
+        height: 601
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 32a48aaa8fb1c19d0800000000000000
+      internalID: -2802334113302296029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note LEFT0002
+      rect:
+        serializedVersion: 2
+        x: 2205
+        y: 2293
+        width: 697
+        height: 595
+      alignment: 9
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 729307f2806c12440800000000000000
+      internalID: 4909422807268473127
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note LEFT0003
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 3035
+        width: 691
+        height: 597
+      alignment: 9
+      pivot: {x: -0.001447178, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4feb6fb6a81be1af0800000000000000
+      internalID: -423706106851311884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note LEFT0004
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 3632
+        width: 697
+        height: 598
+      alignment: 9
+      pivot: {x: -0.004304161, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2aeb3f064f4c7c530800000000000000
+      internalID: 3875282558253252258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note LEFT0005
+      rect:
+        serializedVersion: 2
+        x: 2264
+        y: 4230
+        width: 713
+        height: 599
+      alignment: 9
+      pivot: {x: -0.011220196, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b8bc263d94c463e0800000000000000
+      internalID: -2061306549931034446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note LEFT0006
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2289
+        width: 733
+        height: 599
+      alignment: 9
+      pivot: {x: -0.019099591, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 948e23430843b3300800000000000000
+      internalID: 232837530975922249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note LEFT0007
+      rect:
+        serializedVersion: 2
+        x: 1447
+        y: 2292
+        width: 758
+        height: 596
+      alignment: 9
+      pivot: {x: -0.029023746, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1d7d8e3b5ccfdd50800000000000000
+      internalID: 6764349857597324570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note LEFT0008
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1697
+        width: 776
+        height: 592
+      alignment: 9
+      pivot: {x: -0.037371133, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85cc4e16e1ae39e0800000000000000
+      internalID: -1639695204593384049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note LEFT0009
+      rect:
+        serializedVersion: 2
+        x: 2977
+        y: 4236
+        width: 775
+        height: 593
+      alignment: 9
+      pivot: {x: -0.045161292, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d7c3e2d989395400800000000000000
+      internalID: 313344913190406100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note LEFT0010
+      rect:
+        serializedVersion: 2
+        x: 2977
+        y: 3646
+        width: 759
+        height: 590
+      alignment: 9
+      pivot: {x: -0.056653492, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8c0ffa0360604e400800000000000000
+      internalID: 352413294498148552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note LEFT0011
+      rect:
+        serializedVersion: 2
+        x: 2977
+        y: 2469
+        width: 728
+        height: 588
+      alignment: 9
+      pivot: {x: -0.0728022, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a027d9ff8e32c1d70800000000000000
+      internalID: 9015120037716783626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note RIGHT0000
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 823
+        height: 541
+      alignment: 9
+      pivot: {x: -0.15188335, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7bade0e0dda8d9c00800000000000000
+      internalID: 909035381826968247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note RIGHT0001
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 2706
+        width: 742
+        height: 528
+      alignment: 9
+      pivot: {x: -0.31132075, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 656f5cc10911172b0800000000000000
+      internalID: -5588666351934376362
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note RIGHT0002
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 1127
+        width: 734
+        height: 525
+      alignment: 9
+      pivot: {x: -0.3201635, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6695004a727876af0800000000000000
+      internalID: -403205037301409434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note RIGHT0003
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 1652
+        width: 726
+        height: 526
+      alignment: 9
+      pivot: {x: -0.3181818, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cc7c65f85384a5c10800000000000000
+      internalID: 2043024775841236940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note RIGHT0004
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 3234
+        width: 726
+        height: 529
+      alignment: 9
+      pivot: {x: -0.30716252, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 11506e7a42da892a0800000000000000
+      internalID: -6730439270157908719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note RIGHT0005
+      rect:
+        serializedVersion: 2
+        x: 3804
+        y: 7
+        width: 737
+        height: 534
+      alignment: 9
+      pivot: {x: -0.2835821, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f033734fa6fb304e0800000000000000
+      internalID: -2016557742047153393
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note RIGHT0006
+      rect:
+        serializedVersion: 2
+        x: 823
+        y: 0
+        width: 757
+        height: 541
+      alignment: 9
+      pivot: {x: -0.25495377, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 245f0f9cbac0e2a10800000000000000
+      internalID: 1886459225881769282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note RIGHT0007
+      rect:
+        serializedVersion: 2
+        x: 4478
+        y: 2626
+        width: 782
+        height: 548
+      alignment: 9
+      pivot: {x: -0.22122762, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d0fa8d9d87be8fd0800000000000000
+      internalID: -2337729337697308458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note RIGHT0008
+      rect:
+        serializedVersion: 2
+        x: 4478
+        y: 4273
+        width: 802
+        height: 556
+      alignment: 9
+      pivot: {x: -0.19077307, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aec51e50d2027b20800000000000000
+      internalID: 3130567784930856616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note RIGHT0009
+      rect:
+        serializedVersion: 2
+        x: 2245
+        y: 549
+        width: 811
+        height: 563
+      alignment: 9
+      pivot: {x: -0.16152897, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e6f046ee683b9e2c0800000000000000
+      internalID: -4401789768671424658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note RIGHT0010
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 541
+        width: 788
+        height: 571
+      alignment: 9
+      pivot: {x: -0.13832487, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 81e308f1ab3db9e10800000000000000
+      internalID: 2205589238873865752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note RIGHT0011
+      rect:
+        serializedVersion: 2
+        x: 2765
+        y: 1118
+        width: 744
+        height: 579
+      alignment: 9
+      pivot: {x: -0.114247315, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6bb2ef069bd23b540800000000000000
+      internalID: 5022408283667704758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note UP0000
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 4184
+        width: 603
+        height: 645
+      alignment: 9
+      pivot: {x: -0.046434496, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6758c1a79217f0340800000000000000
+      internalID: 4832205348148118902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note UP0001
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3515
+        width: 584
+        height: 654
+      alignment: 9
+      pivot: {x: -0.049657535, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 87872e41e72a9d440800000000000000
+      internalID: 4961175126925277304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note UP0002
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 4174
+        width: 566
+        height: 655
+      alignment: 9
+      pivot: {x: -0.056537103, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 389d6d6417baf5da0800000000000000
+      internalID: -5953851679352366717
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note UP0003
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4169
+        width: 551
+        height: 660
+      alignment: 9
+      pivot: {x: -0.06533575, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 876d6315718b1ecb0800000000000000
+      internalID: -4836382114532895112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note UP0004
+      rect:
+        serializedVersion: 2
+        x: 551
+        y: 4171
+        width: 544
+        height: 658
+      alignment: 9
+      pivot: {x: -0.075367644, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d9de3f5b39a763d20800000000000000
+      internalID: 3257926155280575901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note UP0005
+      rect:
+        serializedVersion: 2
+        x: 584
+        y: 3518
+        width: 549
+        height: 651
+      alignment: 9
+      pivot: {x: -0.0856102, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef19332a7ed0751f0800000000000000
+      internalID: -1056360299085196802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note UP0006
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 3544
+        width: 565
+        height: 640
+      alignment: 9
+      pivot: {x: -0.09026549, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8492ac71927d81500800000000000000
+      internalID: 367279941123451208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note UP0007
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2888
+        width: 585
+        height: 627
+      alignment: 9
+      pivot: {x: -0.092307694, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae6a5c4f04fe9aab0800000000000000
+      internalID: -4996199249327315222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note UP0008
+      rect:
+        serializedVersion: 2
+        x: 585
+        y: 2907
+        width: 607
+        height: 608
+      alignment: 9
+      pivot: {x: -0.092257, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 695e71974f069cf40800000000000000
+      internalID: 5749233002435044758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note UP0009
+      rect:
+        serializedVersion: 2
+        x: 2977
+        y: 3057
+        width: 627
+        height: 589
+      alignment: 9
+      pivot: {x: -0.09090909, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f8c2a0c72fa819f50800000000000000
+      internalID: 6886438079293959311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note UP0010
+      rect:
+        serializedVersion: 2
+        x: 776
+        y: 1702
+        width: 641
+        height: 587
+      alignment: 9
+      pivot: {x: -0.09204368, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 09830d89725061880800000000000000
+      internalID: -8640713167438071664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note UP0011
+      rect:
+        serializedVersion: 2
+        x: 1417
+        y: 1702
+        width: 661
+        height: 587
+      alignment: 9
+      pivot: {x: -0.090771556, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b2b7bdd9d14acaf60800000000000000
+      internalID: 8046987081313647403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note DOWN0000
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 90
+        width: 723
+        height: 515
+      alignment: 9
+      pivot: {x: -0.22544952, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d60b487a484fcf870800000000000000
+      internalID: 8718111829265789037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note DOWN0001
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 605
+        width: 726
+        height: 522
+      alignment: 9
+      pivot: {x: -0.2520661, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df45d7ec9f0f98cf0800000000000000
+      internalID: -249403348640508675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note DOWN0002
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 3763
+        width: 725
+        height: 532
+      alignment: 9
+      pivot: {x: -0.26206896, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 52e9ac47c368deb50800000000000000
+      internalID: 6624098221147463205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note DOWN0003
+      rect:
+        serializedVersion: 2
+        x: 3073
+        y: 5
+        width: 731
+        height: 536
+      alignment: 9
+      pivot: {x: -0.25307798, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c665ba25fe8e4b620800000000000000
+      internalID: 2789110183830967916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note DOWN0004
+      rect:
+        serializedVersion: 2
+        x: 2338
+        y: 2
+        width: 735
+        height: 539
+      alignment: 9
+      pivot: {x: -0.24217688, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d8d20694afa8587c0800000000000000
+      internalID: -4069693880681878131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note DOWN0005
+      rect:
+        serializedVersion: 2
+        x: 4478
+        y: 1538
+        width: 738
+        height: 542
+      alignment: 9
+      pivot: {x: -0.23170732, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d638bd66c27e95920800000000000000
+      internalID: 2979666806372533101
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note DOWN0006
+      rect:
+        serializedVersion: 2
+        x: 4478
+        y: 996
+        width: 745
+        height: 542
+      alignment: 9
+      pivot: {x: -0.21879195, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ffa8490a0970b53e0800000000000000
+      internalID: -2064047686468465921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note DOWN0007
+      rect:
+        serializedVersion: 2
+        x: 1580
+        y: 1
+        width: 758
+        height: 540
+      alignment: 9
+      pivot: {x: -0.20580475, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5bc8a039d37fd430800000000000000
+      internalID: 3809891186440194911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note DOWN0008
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 2178
+        width: 768
+        height: 528
+      alignment: 9
+      pivot: {x: -0.19401042, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd7489e81d4e6dac0800000000000000
+      internalID: -3830622844340385829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note DOWN0009
+      rect:
+        serializedVersion: 2
+        x: 5280
+        y: 4295
+        width: 775
+        height: 534
+      alignment: 9
+      pivot: {x: -0.17290322, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4d6d9ebbcb07e9c70800000000000000
+      internalID: 8979738662932174548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note DOWN0010
+      rect:
+        serializedVersion: 2
+        x: 4478
+        y: 3722
+        width: 762
+        height: 551
+      alignment: 9
+      pivot: {x: -0.14041995, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca784bafeb205a70800000000000000
+      internalID: 8813592779134892739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BF Sing Note DOWN0011
+      rect:
+        serializedVersion: 2
+        x: 788
+        y: 541
+        width: 727
+        height: 571
+      alignment: 9
+      pivot: {x: -0.1127923, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06be40ce66bad5030800000000000000
+      internalID: 3485130145189391200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      BF Sing Note DOWN0000: 8718111829265789037
+      BF Sing Note DOWN0001: -249403348640508675
+      BF Sing Note DOWN0002: 6624098221147463205
+      BF Sing Note DOWN0003: 2789110183830967916
+      BF Sing Note DOWN0004: -4069693880681878131
+      BF Sing Note DOWN0005: 2979666806372533101
+      BF Sing Note DOWN0006: -2064047686468465921
+      BF Sing Note DOWN0007: 3809891186440194911
+      BF Sing Note DOWN0008: -3830622844340385829
+      BF Sing Note DOWN0009: 8979738662932174548
+      BF Sing Note DOWN0010: 8813592779134892739
+      BF Sing Note DOWN0011: 3485130145189391200
+      BF Sing Note LEFT0000: 2977617867059652731
+      BF Sing Note LEFT0001: -2802334113302296029
+      BF Sing Note LEFT0002: 4909422807268473127
+      BF Sing Note LEFT0003: -423706106851311884
+      BF Sing Note LEFT0004: 3875282558253252258
+      BF Sing Note LEFT0005: -2061306549931034446
+      BF Sing Note LEFT0006: 232837530975922249
+      BF Sing Note LEFT0007: 6764349857597324570
+      BF Sing Note LEFT0008: -1639695204593384049
+      BF Sing Note LEFT0009: 313344913190406100
+      BF Sing Note LEFT0010: 352413294498148552
+      BF Sing Note LEFT0011: 9015120037716783626
+      BF Sing Note RIGHT0000: 909035381826968247
+      BF Sing Note RIGHT0001: -5588666351934376362
+      BF Sing Note RIGHT0002: -403205037301409434
+      BF Sing Note RIGHT0003: 2043024775841236940
+      BF Sing Note RIGHT0004: -6730439270157908719
+      BF Sing Note RIGHT0005: -2016557742047153393
+      BF Sing Note RIGHT0006: 1886459225881769282
+      BF Sing Note RIGHT0007: -2337729337697308458
+      BF Sing Note RIGHT0008: 3130567784930856616
+      BF Sing Note RIGHT0009: -4401789768671424658
+      BF Sing Note RIGHT0010: 2205589238873865752
+      BF Sing Note RIGHT0011: 5022408283667704758
+      BF Sing Note UP0000: 4832205348148118902
+      BF Sing Note UP0001: 4961175126925277304
+      BF Sing Note UP0002: -5953851679352366717
+      BF Sing Note UP0003: -4836382114532895112
+      BF Sing Note UP0004: 3257926155280575901
+      BF Sing Note UP0005: -1056360299085196802
+      BF Sing Note UP0006: 367279941123451208
+      BF Sing Note UP0007: -4996199249327315222
+      BF Sing Note UP0008: 5749233002435044758
+      BF Sing Note UP0009: 6886438079293959311
+      BF Sing Note UP0010: -8640713167438071664
+      BF Sing Note UP0011: 8046987081313647403
+      BF idle dance0000: 2930494915222055470
+      BF idle dance0001: 945921847638820071
+      BF idle dance0002: -8935448042506704410
+      BF idle dance0003: -7372104305484897998
+      BF idle dance0004: 847000507493206345
+      BF idle dance0005: 8613902012868112571
+      BF idle dance0006: 2746131672092177567
+      BF idle dance0007: 5258508970471720313
+      BF idle dance0008: 7732579834641111931
+      BF idle dance0009: -3169331607480016060
+      BF idle dance0010: -6057535973335897679
+      BF idle dance0011: 1267843379562022200
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

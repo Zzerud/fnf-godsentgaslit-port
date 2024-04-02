@@ -1,0 +1,85 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: IconAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 50
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_IgnorePlatformSupport: 0
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 984ef57945dbff84eb43fcd5844f7083, type: 3}
+    - {fileID: 2800000, guid: 156a11c960d80ed46a3d76127447ba6f, type: 3}
+    - {fileID: 2800000, guid: 194ebf77861067d4fbd2eb3d2f3001cb, type: 3}
+    - {fileID: 2800000, guid: 176ba8ec9ef29c442aeb762511d777b5, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 194ebf77861067d4fbd2eb3d2f3001cb: 736127316
+    - 194ebf77861067d4fbd2eb3d2f3001cb: 1346896497
+    - 984ef57945dbff84eb43fcd5844f7083: 1649700468
+    - 984ef57945dbff84eb43fcd5844f7083: 853154982
+    - 156a11c960d80ed46a3d76127447ba6f: 1767059661
+    - 156a11c960d80ed46a3d76127447ba6f: -44019989
+    - 176ba8ec9ef29c442aeb762511d777b5: -684687157
+    - 176ba8ec9ef29c442aeb762511d777b5: 1847446909
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 736127316, guid: 194ebf77861067d4fbd2eb3d2f3001cb, type: 3}
+  - {fileID: 1346896497, guid: 194ebf77861067d4fbd2eb3d2f3001cb, type: 3}
+  - {fileID: 1649700468, guid: 984ef57945dbff84eb43fcd5844f7083, type: 3}
+  - {fileID: 853154982, guid: 984ef57945dbff84eb43fcd5844f7083, type: 3}
+  - {fileID: 1767059661, guid: 156a11c960d80ed46a3d76127447ba6f, type: 3}
+  - {fileID: -44019989, guid: 156a11c960d80ed46a3d76127447ba6f, type: 3}
+  - {fileID: -684687157, guid: 176ba8ec9ef29c442aeb762511d777b5, type: 3}
+  - {fileID: 1847446909, guid: 176ba8ec9ef29c442aeb762511d777b5, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - icon-catnap_1
+  - icon-catnap_0
+  - icon-bf_0
+  - icon-bf_1
+  - icon-cantap_1
+  - icon-cantap_0
+  - icon-huggy_0
+  - icon-huggy_1
+  m_RenderDataMap: {}
+  m_Tag: IconAtlas
+  m_IsVariant: 0
