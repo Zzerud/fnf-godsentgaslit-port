@@ -894,8 +894,12 @@ public class Song : MonoBehaviour
                 EnemyPlayAnimation("Idle");
                 if (BedtimeScript.instance)
                 {
-                    if(BedtimeScript.instance.isTvScene)
-                        BedtimeScript.instance.tvs.SetBool("Idle", true);
+                    if (BedtimeScript.instance.isTvScene)
+                    {
+                        BedtimeScript.instance.tvs.SetTrigger("Idle");
+                        BedtimeScript.instance.tvs.ResetTrigger("EndIdle");
+
+                    }
                 }
                 if (GFSpawn.instance)
                 {
@@ -1974,7 +1978,8 @@ public class Song : MonoBehaviour
                     invertHealth = true;
                 if (BedtimeScript.instance.isTvScene)
                 {
-                    BedtimeScript.instance.tvs.SetBool("Idle", false);
+                    BedtimeScript.instance.tvs.SetTrigger("EndIdle");
+                    BedtimeScript.instance.tvs.ResetTrigger("Idle");
                 }
                 switch (noteType)
                 {

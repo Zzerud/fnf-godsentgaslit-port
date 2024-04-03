@@ -39,6 +39,6 @@ MonoBehaviour:
   newTransform: {x: -8.64, y: 2.48, z: 0}
   changeColor: 1
   healthColor: {r: 0.627451, g: 0.69803923, b: 0.7176471, a: 1}
-  songDurationColor: {r: 0, g: 0, b: 0, a: 0}
+  songDurationColor: {r: 0.627451, g: 0.69803923, b: 0.7176471, a: 1}
   isRotated: 0
   isBobingWhileSing: 0
