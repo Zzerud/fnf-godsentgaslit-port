@@ -2863,7 +2863,9 @@ public class Song : MonoBehaviour
                         {
                             if (Enemy2Animator.instance)
                             {
-                                Enemy2Animator.instance.animator.Play("Idle");
+                                if(Enemy2Animator.instance.animator != null)
+                                    Enemy2Animator.instance.animator.Play("Idle");
+
                                 if(Enemy2Animator.instance.additionalAnimators.Length > 0)
                                 {
                                     for (int i = 0; i < Enemy2Animator.instance.additionalAnimators.Length; i++)

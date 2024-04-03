@@ -20713,22 +20713,26 @@ MonoBehaviour:
   - catnapclimb
   - tv
   - huggy
+  - upnap
   characters:
   - {fileID: 11400000, guid: 6ae7fbac6785316429876c27279783fc, type: 2}
   - {fileID: 11400000, guid: ef11bbf9be27d5c47b98f466330daff7, type: 2}
   - {fileID: 11400000, guid: e602422b2d845824d8066f2a1723129c, type: 2}
   - {fileID: 11400000, guid: 6e73185f6a907024a86f747418196d9e, type: 2}
   - {fileID: 11400000, guid: 049f20d8f7a851d40b01f751e41dccb9, type: 2}
+  - {fileID: 11400000, guid: 58cd0b2a092cf364e928e4ba8c5487e1, type: 2}
   protagonistNames:
   - bf
   - bf2
   - bfCatnapClimb
   - bfHuggy
+  - bf3
   protagonists:
   - {fileID: 11400000, guid: bd34676332f50ee46823319efa310eda, type: 2}
   - {fileID: 11400000, guid: 41fce9ae42847a5498c1f3ef0ca89343, type: 2}
   - {fileID: 11400000, guid: 11cde8550e2ff65408a9fe722d5727d2, type: 2}
   - {fileID: 11400000, guid: 73750a262005b5e4fb88f20ead4a79d3, type: 2}
+  - {fileID: 11400000, guid: 9013f31794f054945b7aa26b8b940d96, type: 2}
   defaultEnemy: {fileID: 11400000, guid: 4a2e2fd275eca8b42ae438869101dc28, type: 2}
   girlfriendObject: {fileID: 1846954269}
   girlfriendAnimator: {fileID: 1846954270}
@@ -25389,10 +25393,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1887014239}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1280, y: 720}
+  m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &704162420
 MonoBehaviour:

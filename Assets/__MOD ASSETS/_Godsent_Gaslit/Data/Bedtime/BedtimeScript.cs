@@ -10,7 +10,7 @@ public class BedtimeScript : MonoBehaviour
     public static BedtimeScript instance { get; private set; }
     [HideInInspector]public bool isTvScene = false;
 
-    public GameObject blackAndWhite, scene1, scene2, scene3, scene4, scene5, fog1, fog2;
+    public GameObject blackAndWhite, scene1, scene2, scene3, scene4, scene5, scene6, fog1, fog2;
     public SpriteRenderer fog4;
     public Animator tvs;
 
@@ -21,14 +21,14 @@ public class BedtimeScript : MonoBehaviour
     public SpriteRenderer blackFlash;
     public SpriteRenderer whiteFlash;
 
-    public VideoClip firstSceneClip, nightmare, tv, huggy;
+    public VideoClip firstSceneClip, nightmare, tv, huggy, huggyjump, ending;
 
     public Camera t;
     private void Start()
     {
         instance = this;
         blackAndWhite.SetActive(true);
-        //CameraMovement.instance.volume.profile = a;
+        CameraMovement.instance.volume.profile = a;
 
         scene1.SetActive(true);
         scene2.SetActive(false);
@@ -206,6 +206,26 @@ public class BedtimeScript : MonoBehaviour
         MainEventSystem.instance.thing.SetActive(false);
         VideoPlayedInstance.instance.raw.SetActive(false);
         VideoPlayedInstance.instance.player.Stop();
+
+        VideoPlayedInstance.instance.player.clip = huggyjump;
+        VideoPlayedInstance.instance.player.Prepare();
+    }
+    public void Final()
+    {
+        VideoPlayedInstance.instance.raw.SetActive(false);
+        VideoPlayedInstance.instance.player.Stop();
+        scene5.SetActive(false);
+        scene6.SetActive(true);
+        MainEventSystem.instance.ChangeCharacterEnemyWithoutFlash("upnap");
+        MainEventSystem.instance.ChangeCharacterPlayer("bf3");
+        ChangeWhiteFade("outBlack", "0.001");
+        CameraShake.instance.Flash("1.001");
+    }
+    public void PrepareForEnd()
+    {
+        ChangeWhiteFade("inBlack", "1.2");
+        VideoPlayedInstance.instance.player.clip = ending;
+        VideoPlayedInstance.instance.player.Prepare();
     }
 
     #region NeedToAllOfScripts
