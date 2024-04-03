@@ -892,6 +892,11 @@ public class Song : MonoBehaviour
                 
 
                 EnemyPlayAnimation("Idle");
+                if (BedtimeScript.instance)
+                {
+                    if(BedtimeScript.instance.isTvScene)
+                        BedtimeScript.instance.tvs.SetBool("Idle", true);
+                }
                 if (GFSpawn.instance)
                 {
                     if(GFSpawn.instance.wowGfSing)
@@ -1537,6 +1542,7 @@ public class Song : MonoBehaviour
 
     #region Animating
 
+
     public void EnemyPlayAnimation(string animationName)
     {
         if (enemy.idleOnly || OptionsV2.DesperateMode) return;
@@ -1966,6 +1972,10 @@ public class Song : MonoBehaviour
             case 2:
                 if(Player.playAsEnemy || Player.demoMode || Player.twoPlayers)
                     invertHealth = true;
+                if (BedtimeScript.instance.isTvScene)
+                {
+                    BedtimeScript.instance.tvs.SetBool("Idle", false);
+                }
                 switch (noteType)
                 {
                     case 0:

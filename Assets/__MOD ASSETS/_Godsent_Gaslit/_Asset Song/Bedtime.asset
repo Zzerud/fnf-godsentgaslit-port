@@ -26,6 +26,6 @@ MonoBehaviour:
   isNonsensicaAnimations: 0
   isCustomIcons: 0
   songIndex: 1
-  imageInPause: {fileID: 0}
+  imageInPause: {fileID: 21300000, guid: 6234f9536aa03b74d8f1c45489d8e344, type: 3}
   songColor: {r: 0.19607845, g: 0.098039225, b: 0.24705884, a: 1}
   additionalSongColor: {r: 0.19607845, g: 0.098039225, b: 0.24705884, a: 1}

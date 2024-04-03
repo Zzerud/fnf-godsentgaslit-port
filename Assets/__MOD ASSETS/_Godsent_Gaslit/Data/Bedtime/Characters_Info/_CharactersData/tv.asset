@@ -28,12 +28,12 @@ MonoBehaviour:
   floatToOffset: 0
   floatSpeed: 0
   scale: 1.17117
-  cameraOffset: {x: 2, y: 6}
-  orthographicSize: 5.5
-  yToUp: 0
-  yToDown: 0
-  xToLeft: 0
-  xToRight: 0
+  cameraOffset: {x: -1.2, y: 5.5}
+  orthographicSize: 3.2
+  yToUp: 6
+  yToDown: 5
+  xToLeft: -1.7
+  xToRight: -0.7
   portrait: {fileID: 1732778074, guid: b366f7df296574d49b5a6c1cddce7846, type: 3}
   portraitDead: {fileID: 1732778074, guid: b366f7df296574d49b5a6c1cddce7846, type: 3}
   portraitWin: {fileID: 1732778074, guid: b366f7df296574d49b5a6c1cddce7846, type: 3}

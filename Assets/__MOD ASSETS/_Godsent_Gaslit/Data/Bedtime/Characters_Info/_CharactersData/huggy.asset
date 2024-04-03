@@ -23,22 +23,22 @@ MonoBehaviour:
   doesFloat: 0
   floatToOffset: 0
   floatSpeed: 0
-  scale: 1
-  cameraOffset: {x: 2, y: 6}
-  orthographicSize: 5.5
-  yToUp: 0
-  yToDown: 0
-  xToLeft: 0
-  xToRight: 0
-  portrait: {fileID: 0}
-  portraitDead: {fileID: 0}
-  portraitWin: {fileID: 0}
+  scale: 1.17117
+  cameraOffset: {x: -5.2, y: 2.4}
+  orthographicSize: 3.3
+  yToUp: 2.9
+  yToDown: 1.9
+  xToLeft: -5.7
+  xToRight: -4.7
+  portrait: {fileID: -684687157, guid: 176ba8ec9ef29c442aeb762511d777b5, type: 3}
+  portraitDead: {fileID: 1847446909, guid: 176ba8ec9ef29c442aeb762511d777b5, type: 3}
+  portraitWin: {fileID: -684687157, guid: 176ba8ec9ef29c442aeb762511d777b5, type: 3}
   portraitSize: {x: 0, y: 0}
   isRotatedIcon: 0
-  isCustomPosition: 0
-  newTransform: {x: 0, y: 0, z: 0}
-  changeColor: 0
-  healthColor: {r: 1, g: 0, b: 0, a: 1}
-  songDurationColor: {r: 0, g: 0, b: 0, a: 0}
+  isCustomPosition: 1
+  newTransform: {x: -12.38, y: -2.16, z: 0.0686}
+  changeColor: 1
+  healthColor: {r: 0.18431373, g: 0.19215688, b: 0.2509804, a: 1}
+  songDurationColor: {r: 0.18431373, g: 0.19215688, b: 0.2509804, a: 1}
   isRotated: 0
   isBobingWhileSing: 0

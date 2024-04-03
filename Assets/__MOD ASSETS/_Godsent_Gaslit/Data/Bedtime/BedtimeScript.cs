@@ -7,8 +7,12 @@ using UnityEngine.Video;
 
 public class BedtimeScript : MonoBehaviour
 {
-    public GameObject blackAndWhite, scene1, scene2, scene3, fog1, fog2;
+    public static BedtimeScript instance { get; private set; }
+    [HideInInspector]public bool isTvScene = false;
+
+    public GameObject blackAndWhite, scene1, scene2, scene3, scene4, scene5, fog1, fog2;
     public SpriteRenderer fog4;
+    public Animator tvs;
 
     [Space(15)]
     public PostProcessProfile a;
@@ -17,15 +21,19 @@ public class BedtimeScript : MonoBehaviour
     public SpriteRenderer blackFlash;
     public SpriteRenderer whiteFlash;
 
-    public VideoClip firstSceneClip, nightmare, tv;
+    public VideoClip firstSceneClip, nightmare, tv, huggy;
 
     public Camera t;
     private void Start()
     {
+        instance = this;
         blackAndWhite.SetActive(true);
         //CameraMovement.instance.volume.profile = a;
 
         scene1.SetActive(true);
+        scene2.SetActive(false);
+        scene3.SetActive(false);
+        scene4.SetActive(false);
 
         whiteFlash.DOFade(0, 0);
         blackFlash.DOFade(1, 0);
@@ -61,17 +69,6 @@ public class BedtimeScript : MonoBehaviour
                 sprite.enabled = false;
             }
 
-        }
-    }
-    private void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.A))
-        {
-            t.DOShakeRotation(0.1f, -3, 0, 0);
-        }
-        else if (Input.GetKeyDown(KeyCode.D))
-        {
-            t.DOShakeRotation(0.1f, 3, 0, 0);
         }
     }
     public void ChangeWhiteFade(string fadeType, string time)
@@ -160,7 +157,7 @@ public class BedtimeScript : MonoBehaviour
         AddCameraZoom("0.3");
         VideoPlayedInstance.instance.player.Play();
         VideoPlayedInstance.instance.raw.SetActive(true);
-        MainEventSystem.instance.PlayCutSceneEnemy("gas");
+        MainEventSystem.instance.thing.SetActive(false);
 
     }
     public void ClimbCatnap()
@@ -169,11 +166,46 @@ public class BedtimeScript : MonoBehaviour
         MainEventSystem.instance.ChangeCharacterPlayer("bfCatnapClimb");
         scene1.SetActive(false);
         scene3.SetActive(true);
+        //fog4.DOFade(0, 0);
+
         ChangeWhiteFade("outBlack", "3.5");
         VideoPlayedInstance.instance.raw.SetActive(false);
         VideoPlayedInstance.instance.player.Stop();
         VideoPlayedInstance.instance.player.clip = tv;
         VideoPlayedInstance.instance.player.Prepare();
+    }
+
+    public void TvMoment()
+    {
+        fog4.DOFade(0, 0);
+        ChangeWhiteFade("outBlack", "6.01");
+        VideoPlayedInstance.instance.raw.SetActive(false);
+        VideoPlayedInstance.instance.player.Stop();
+        isTvScene = true;
+        AddCameraZoom("0.2");
+
+        scene3.SetActive(false);
+        scene4.SetActive(true);
+        MainEventSystem.instance.ChangeCharacterEnemyWithoutFlash("tv");
+        MainEventSystem.instance.thing.SetActive(true);
+    }
+    public void PrepareForHuggy()
+    {
+        ChangeWhiteFade("inBlack", "0.5");
+        VideoPlayedInstance.instance.player.clip = huggy;
+        VideoPlayedInstance.instance.player.Prepare();
+    }
+    public void Huggy()
+    {
+        ChangeWhiteFade("outBlack", "1.001");
+        CameraShake.instance.Flash("1.001");
+        scene4.SetActive(false);
+        scene5.SetActive(true);
+        MainEventSystem.instance.ChangeCharacterEnemyWithoutFlash("huggy");
+        MainEventSystem.instance.ChangeCharacterPlayer("bfHuggy");
+        MainEventSystem.instance.thing.SetActive(false);
+        VideoPlayedInstance.instance.raw.SetActive(false);
+        VideoPlayedInstance.instance.player.Stop();
     }
 
     #region NeedToAllOfScripts
