@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 506c61b726e84d84bc8f4ef30a7665a2, type: 3}
+  m_Name: Bedtime
+  m_EditorClassIdentifier: 
+  songName: Bedtime
+  sceneName: Bedtime
+  chart: {fileID: 4900000, guid: 7d3b8182b75ab2d4f924188ec662f2fc, type: 3}
+  chartEasy: {fileID: 0}
+  instrumentals: {fileID: 8300000, guid: a6dff37fb5dd0314aad966be1aa9df6b, type: 3}
+  vocalsP2: {fileID: 8300000, guid: eb7b7c3d84159ab4c8a6abf3cd2340e6, type: 3}
+  vocalsP1: {fileID: 8300000, guid: e989492b8b53d164ebf2970fa789f013, type: 3}
+  videoRus: {fileID: 0}
+  videoEng: {fileID: 0}
+  videoPath: 
+  isGfEnabled: 0
+  isNonsensicaAnimations: 0
+  isCustomIcons: 0
+  songIndex: 1
+  imageInPause: {fileID: 0}
+  songColor: {r: 0.19607845, g: 0.098039225, b: 0.24705884, a: 1}
+  additionalSongColor: {r: 0.19607845, g: 0.098039225, b: 0.24705884, a: 1}

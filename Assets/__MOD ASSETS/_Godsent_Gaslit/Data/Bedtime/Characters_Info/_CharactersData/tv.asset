@@ -15,6 +15,10 @@ MonoBehaviour:
   characterName: tv
   animations:
   - {fileID: 11400000, guid: 9de65d5fd8d8d78409a086db17059c62, type: 2}
+  - {fileID: 11400000, guid: 1c51cec4f5aa16d4bb2554e768234d47, type: 2}
+  - {fileID: 11400000, guid: 91189eb014e2716468184a549889d6e2, type: 2}
+  - {fileID: 11400000, guid: e782389e8fb5d884c90c149e4ff6a8a2, type: 2}
+  - {fileID: 11400000, guid: 8a083ac44499c6944b29d474dd9bffa4, type: 2}
   - {fileID: 11400000, guid: 389c62bc90d128d44a9b7332b820cdc9, type: 2}
   - {fileID: 11400000, guid: 4473d1d224eefde4981ee2b6a08f92de, type: 2}
   - {fileID: 11400000, guid: 06435aee4c962a04a81def1dc2e431f9, type: 2}
@@ -23,22 +27,22 @@ MonoBehaviour:
   doesFloat: 0
   floatToOffset: 0
   floatSpeed: 0
-  scale: 1
+  scale: 1.17117
   cameraOffset: {x: 2, y: 6}
   orthographicSize: 5.5
   yToUp: 0
   yToDown: 0
   xToLeft: 0
   xToRight: 0
-  portrait: {fileID: 0}
-  portraitDead: {fileID: 0}
-  portraitWin: {fileID: 0}
+  portrait: {fileID: 1732778074, guid: b366f7df296574d49b5a6c1cddce7846, type: 3}
+  portraitDead: {fileID: 1732778074, guid: b366f7df296574d49b5a6c1cddce7846, type: 3}
+  portraitWin: {fileID: 1732778074, guid: b366f7df296574d49b5a6c1cddce7846, type: 3}
   portraitSize: {x: 0, y: 0}
   isRotatedIcon: 0
-  isCustomPosition: 0
-  newTransform: {x: 0, y: 0, z: 0}
-  changeColor: 0
+  isCustomPosition: 1
+  newTransform: {x: -6.5998993, y: 3.6713998, z: 0.0686}
+  changeColor: 1
   healthColor: {r: 1, g: 0, b: 0, a: 1}
-  songDurationColor: {r: 0, g: 0, b: 0, a: 0}
+  songDurationColor: {r: 1, g: 0, b: 0, a: 1}
   isRotated: 0
   isBobingWhileSing: 0

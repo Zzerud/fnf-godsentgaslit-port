@@ -17,57 +17,57 @@ MonoBehaviour:
   frames:
   - sprite: {fileID: -7404560147086493089, guid: c51a6e436545eec4b89d86f1a2557b8c,
       type: 3}
-    offset: {x: 0, y: 0}
+    offset: {x: -0.2, y: 1.3}
     rotation: {x: 0, y: 0, z: 0, w: 0}
   - sprite: {fileID: -7859986410234419109, guid: c51a6e436545eec4b89d86f1a2557b8c,
       type: 3}
-    offset: {x: 0, y: 0}
+    offset: {x: -0.2, y: 1.3}
     rotation: {x: 0, y: 0, z: 0, w: 0}
   - sprite: {fileID: 5552203620857318157, guid: c51a6e436545eec4b89d86f1a2557b8c,
       type: 3}
-    offset: {x: 0, y: 0}
+    offset: {x: -0.2, y: 1.3}
     rotation: {x: 0, y: 0, z: 0, w: 0}
   - sprite: {fileID: -8430229543839188189, guid: c51a6e436545eec4b89d86f1a2557b8c,
       type: 3}
-    offset: {x: 0, y: 0}
+    offset: {x: -0.2, y: 1.3}
     rotation: {x: 0, y: 0, z: 0, w: 0}
   - sprite: {fileID: -51799685213130890, guid: c51a6e436545eec4b89d86f1a2557b8c, type: 3}
-    offset: {x: 0, y: 0}
+    offset: {x: -0.2, y: 1.3}
     rotation: {x: 0, y: 0, z: 0, w: 0}
   - sprite: {fileID: -5133300061273107473, guid: c51a6e436545eec4b89d86f1a2557b8c,
       type: 3}
-    offset: {x: 0, y: 0}
+    offset: {x: -0.2, y: 1.3}
     rotation: {x: 0, y: 0, z: 0, w: 0}
   - sprite: {fileID: -8239522000802244992, guid: c51a6e436545eec4b89d86f1a2557b8c,
       type: 3}
-    offset: {x: 0, y: 0}
+    offset: {x: -0.2, y: 1.3}
     rotation: {x: 0, y: 0, z: 0, w: 0}
   - sprite: {fileID: -7832713928564391788, guid: c51a6e436545eec4b89d86f1a2557b8c,
       type: 3}
-    offset: {x: 0, y: 0}
+    offset: {x: -0.2, y: 1.3}
     rotation: {x: 0, y: 0, z: 0, w: 0}
   - sprite: {fileID: -9141362237025755003, guid: c51a6e436545eec4b89d86f1a2557b8c,
       type: 3}
-    offset: {x: 0, y: 0}
+    offset: {x: -0.2, y: 1.3}
     rotation: {x: 0, y: 0, z: 0, w: 0}
   - sprite: {fileID: -3765743891027189161, guid: c51a6e436545eec4b89d86f1a2557b8c,
       type: 3}
-    offset: {x: 0, y: 0}
+    offset: {x: -0.2, y: 1.3}
     rotation: {x: 0, y: 0, z: 0, w: 0}
   - sprite: {fileID: 716620721035857452, guid: c51a6e436545eec4b89d86f1a2557b8c, type: 3}
-    offset: {x: 0, y: 0}
+    offset: {x: -0.2, y: 1.3}
     rotation: {x: 0, y: 0, z: 0, w: 0}
   - sprite: {fileID: 1401712988647802986, guid: c51a6e436545eec4b89d86f1a2557b8c,
       type: 3}
-    offset: {x: 0, y: 0}
+    offset: {x: -0.2, y: 1.3}
     rotation: {x: 0, y: 0, z: 0, w: 0}
   - sprite: {fileID: -8557218733691553737, guid: c51a6e436545eec4b89d86f1a2557b8c,
       type: 3}
-    offset: {x: 0, y: 0}
+    offset: {x: -0.2, y: 1.3}
     rotation: {x: 0, y: 0, z: 0, w: 0}
   - sprite: {fileID: -4081843627515750701, guid: c51a6e436545eec4b89d86f1a2557b8c,
       type: 3}
-    offset: {x: 0, y: 0}
+    offset: {x: -0.2, y: 1.3}
     rotation: {x: 0, y: 0, z: 0, w: 0}
   sprites: []
   spriteAnimationType: 1

@@ -2899,6 +2899,7 @@ public class Song : MonoBehaviour
 
                     mainCamera.orthographicSize = Mathf.Lerp(mainCamera.orthographicSize, defaultGameZoom, cameraBopLerpSpeed);
                     uiCamera.orthographicSize = Mathf.Lerp(uiCamera.orthographicSize, _defaultZoom, cameraBopLerpSpeed);
+                    //uiCamera.ro
                 }
 
 

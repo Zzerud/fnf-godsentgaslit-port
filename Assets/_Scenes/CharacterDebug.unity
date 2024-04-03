@@ -6279,7 +6279,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 1999434579}
   protogen: {fileID: 0}
-  character: {fileID: 11400000, guid: a78c6d1788370ab4cae7e451e519df79, type: 2}
+  character: {fileID: 11400000, guid: 6e73185f6a907024a86f747418196d9e, type: 2}
   firstFrame: {fileID: 7580920}
   previousFrame: {fileID: 7580920}
   buttons: {fileID: 1266392450}

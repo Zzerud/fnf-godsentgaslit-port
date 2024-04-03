@@ -10,29 +10,15 @@ public class MainEventSystem : MonoBehaviour
 {
     public static MainEventSystem instance { get; private set; }
     #region Variables
-    public GameObject par;
-    public Image redConsequences;
-    public Image redAlways;
-    public Image blackConsequences;
 
-    public Animator creditMenu;
     public Animator inGameAnimation;
-    public Animator jumpScare;
-    public TMP_Text subtitles;
-    public Animator subtitleAnim;
-    public Vector3 firstOffsetPlayer1;
-    public Vector3 firstOffsetPlayer2;
     public bool isAnimationOver = true;
     public bool isAnimationOverBF = true;
     private bool isSetMiddleScroll = false;
     public bool effectsEnabled = false;
     private float elapsedTime;
     private float _targetSpeed;
-    private float lastTime;
     public NoteObject[] c;
-    public Character[] characters;
-    public Protagonist[] protagonists;
-    public Protagonist nonsensess, bff;
 
     public TMP_Text txtSpawnPoint;
     public Animator setSpawn;
@@ -72,15 +58,10 @@ public class MainEventSystem : MonoBehaviour
     
     private void Start()
     {
-        redConsequences.CrossFadeAlpha(0, 0, false);
-        redAlways.CrossFadeAlpha(0, 0, false);
-        blackConsequences.CrossFadeAlpha(0,0,false);
 
         subtitleText.CrossFadeAlpha(1, 0, false);
         txtSpawnPoint.CrossFadeAlpha(0, 0, false);
         instance = this;
-        firstOffsetPlayer1 = CameraMovement.instance.playerOneOffset;
-        firstOffsetPlayer2 = CameraMovement.instance.playerTwoOffset;
         _targetSpeed = Song.instance._song.Speed;
     }
     private void Update()
@@ -138,7 +119,7 @@ public class MainEventSystem : MonoBehaviour
         DadBackup.instance.dad.enabled = true;
         DadBG.instance.dad.enabled = false;
         DadBG.instance.dadAnim.enabled = false;
-        CameraMovement.instance.playerTwoOffset = firstOffsetPlayer2;
+        //CameraMovement.instance.playerTwoOffset = firstOffsetPlayer2;
         CameraMovement.instance.focusWhenAnimations = false;
     }
     public void PlayCutScenePlayer(string animationName)
@@ -160,7 +141,7 @@ public class MainEventSystem : MonoBehaviour
         BoyfriendBackup.instance.bf.enabled = true;
         BoyfriendBG.instance.bf.enabled = false;
         BoyfriendBG.instance.bfAnim.enabled = false;
-        CameraMovement.instance.playerOneOffset = firstOffsetPlayer1;
+        //CameraMovement.instance.playerOneOffset = firstOffsetPlayer1;
     }
 
     public void EndCutSceneBF()
@@ -175,32 +156,6 @@ public class MainEventSystem : MonoBehaviour
 
     // all about effects and changes characters
     #region Characters&Effects
-    /*public void ChangeCharacterEnemy(string character)
-    {
-        if(Song.instance.charactersDictionary.ContainsKey(character))
-        {
-            CameraShake.instance.Flash("0.7");
-            Character currentCharacter = Song.instance.charactersDictionary[character];
-            DadBackup.instance.Change(currentCharacter);
-            if (currentCharacter.isCustomPosition)
-            {
-                DadBackup.instance.dadTransform.position = currentCharacter.newTransform;
-                if (currentCharacter.changeColor)
-                {
-                    Song.instance.ChangeColorDuration(currentCharacter.songDurationColor);
-                }
-            }
-
-            Song.instance.enemy = Song.instance.charactersDictionary[character];
-            Song.instance.enemyHealthIcon.sprite = Song.instance.enemy.portrait;
-            Song.instance.enemyHealthBar.color = Song.instance.enemy.healthColor;
-            CameraMovement.instance.playerTwoOffset = currentCharacter.cameraOffset;
-            CameraMovement.instance._defaultPositionPlayer2 = currentCharacter.cameraOffset;
-            DadBackup.instance.dadTransform.DOScale(currentCharacter.scale, 0);
-
-        }
-
-    }*/
     public void ChangeCharacterEnemyWithoutFlash(string character)
     {
         if (Song.instance.charactersDictionary.ContainsKey(character))
@@ -264,22 +219,6 @@ public class MainEventSystem : MonoBehaviour
             BoyfriendBackup.instance.bfTransform.DOScale(currentCharacter.scale, 0);
         }
         
-    }
-    public void CharacterBfChangeOld()
-    {
-        BoyfriendBackup.instance.gameObject.LeanScaleX(-1, 0);
-        BoyfriendBackup.instance.Change(nonsensess);
-        Song.instance.protagonist = nonsensess;
-        Song.instance.boyfriendHealthIcon.sprite = Song.instance.protagonist.portrait;
-        Song.instance.boyfriendHealthBar.color = Song.instance.protagonist.healthColor;
-    }
-    public void CharacterBfChangeOldNormall()
-    {
-        BoyfriendBackup.instance.gameObject.LeanScaleX(1, 0);
-        BoyfriendBackup.instance.Change(bff);
-        Song.instance.protagonist = bff;
-        Song.instance.boyfriendHealthIcon.sprite = Song.instance.protagonist.portrait;
-        Song.instance.boyfriendHealthBar.color = Song.instance.protagonist.healthColor;
     }
 
 
@@ -358,20 +297,6 @@ public class MainEventSystem : MonoBehaviour
         float s = float.Parse(speed, System.Globalization.NumberStyles.Number, System.Globalization.CultureInfo.InvariantCulture);
         _targetSpeed = s;
     }
-    public void SubtitlesOn(int index)
-    {
-        if (subtitlesInSong.instance)
-        {
-            subtitles.SetText(subtitlesInSong.instance.subtitlesText[index]);
-            subtitleAnim.SetTrigger("NewString");
-            lastTime = Time.time;
-        }
-    }
-    IEnumerator HideSubtitles()
-    {
-        yield return new WaitForSeconds(3);
-        subtitles.DOFade(0, 2);
-    }
     public void TrustTest(string enable)
     {
         if(enable == "yes")
@@ -398,6 +323,8 @@ public class MainEventSystem : MonoBehaviour
     #endregion
 
     public Animator critters;
+    public Camera gpCamera;
+    public GameObject thing;
 
 
     public void InGameAnimation(string animationName)
@@ -406,33 +333,27 @@ public class MainEventSystem : MonoBehaviour
     }
 
 
-    IEnumerator ConsequencesRed()
-    {
-        while (true)
-        {
-            redConsequences.CrossFadeAlpha(0.2f, 0f, false);
-            redConsequences.CrossFadeAlpha(0f, 0.3f, false);
-            yield return new WaitForSeconds(0.5f);
-        }
-    }
-    IEnumerator ConsequencesBLack()
-    {
-        while (true)
-        {
-            blackConsequences.CrossFadeAlpha(1f, 1f, false);
-            yield return new WaitForSeconds(1f);
-            blackConsequences.CrossFadeAlpha(0f, 1f, false);
-            yield return new WaitForSeconds(1f);
-        }
-    }
 
-    public void Critters(int index)
+    public void Critters(string name) // one, two, three
     {
         critters.ResetTrigger("1");
         critters.ResetTrigger("2");
         critters.ResetTrigger("3");
         critters.ResetTrigger("out");
-        critters.SetTrigger(index);
+
+        // this fucking Json takes my int number in string type from somewhere, so I had to do it like this
+        switch (name)
+        {
+            case "one":
+                critters.SetTrigger("1");
+                break;
+            case "two":
+                critters.SetTrigger("2");
+                break;
+            case "three":
+                critters.SetTrigger("3");
+                break;
+        }
     }
     public void OnCrittersOut()
     {
@@ -442,4 +363,18 @@ public class MainEventSystem : MonoBehaviour
         critters.SetTrigger("out");
     }
 
+    public void Bounce(string index)
+    {
+        switch(index)
+        {
+            case "one":
+                gpCamera.DOShakeRotation(0.2f, -3, 0, 0);
+                gpCamera.orthographicSize -= 0.4f; 
+                break;
+            case "two":
+                gpCamera.DOShakeRotation(0.2f, 3, 0, 0);
+                gpCamera.orthographicSize -= 0.4f;
+                break;
+        }
+    }
 }

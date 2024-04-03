@@ -109,6 +109,19 @@ public class NoteObject : MonoBehaviour
                 outlineSprite.enabled = mustHit;
             }
         }
+        else
+        {
+            if (Song.modeOfPlay == 2)
+            {
+                sprite.enabled = !mustHit;
+                outlineSprite.enabled = !mustHit;
+            }
+            else
+            {
+                sprite.enabled = mustHit;
+                outlineSprite.enabled = mustHit;
+            }
+        }
 
         var oldPos = transform.position;
         var yPos = mustHit ? Song.instance.player1NoteSprites[type].transform.position.y : Song.instance.player2NoteSprites[type].transform.position.y;

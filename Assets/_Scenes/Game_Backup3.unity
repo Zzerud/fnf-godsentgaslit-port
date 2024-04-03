@@ -20446,8 +20446,8 @@ GameObject:
   - component: {fileID: 578016965}
   - component: {fileID: 578016972}
   - component: {fileID: 578016975}
-  - component: {fileID: 578016976}
   - component: {fileID: 578016977}
+  - component: {fileID: 578016976}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -20708,215 +20708,21 @@ MonoBehaviour:
   upNotesPool: {fileID: 11400000, guid: 9f0590c4017bcce45a0271224ad8e6c2, type: 2}
   holdNotesPool: {fileID: 11400000, guid: 2385ff37c9e349a4d90ddc51440130dc, type: 2}
   characterNames:
-  - Afton
-  - afton2
-  - afton3
-  - afton8bit
-  - springbonnie
-  - phfreddy
-  - phfreddy2
-  - phfoxy
-  - phfoxy2
-  - phfoxy3
-  - phchica
-  - phchica2
-  - phbb
-  - phbb2
-  - mangle
-  - puppet
-  - phantoms
-  - phbb3
-  - springtrap
-  - springtrap2
-  - springtrap3
-  - springtrap4
-  - springtrap5
-  - springtrap6
-  - springtrap7
-  - springtrap8
-  - bb
-  - jj
-  - jj2
-  - jj3
-  - leantrap
-  - leantrap2
-  - paperfreddy
-  - paperfreddy2
-  - paperfreddy3
-  - endo01
-  - endo02
-  - endosb
-  - salvage
-  - purple freddy
-  - fred
-  - 5amspringtrap
-  - 5amspringtrap2
-  - 5amspringtrapfreddy
-  - wafflebear
-  - wafflebear2
-  - wafflebonnie
-  - wafflebonnie2
-  - oobbb
-  - oobbb2
-  - oobchica
-  - oobchica2
-  - oobfredbear
-  - oobfredbear2
-  - oobmangle
-  - oobmangle2
-  - oobmangle3
-  - oobmangle4
-  - oobmangle5
-  - oobmangle6
-  - oobNothing
-  - pshadowfreddyBonnie
-  - shadowbonnie
-  - shadowbonnie2
-  - shadowfreddy
-  - shadowfreddy2
+  - catnap
+  - catnap2
+  - catnapclimb
   characters:
-  - {fileID: 11400000, guid: d537d764b8da0b94a838f4dcaaf262a2, type: 2}
-  - {fileID: 11400000, guid: 40c1b0ee15af7314485698bf7a020066, type: 2}
-  - {fileID: 11400000, guid: 4eb4a3673758c654da2a272ac9bd6178, type: 2}
-  - {fileID: 11400000, guid: 91fc17719df60fc48a913ec95f6c1472, type: 2}
-  - {fileID: 11400000, guid: ee06ae5dbcd83fa46b96f0406415b5ac, type: 2}
-  - {fileID: 11400000, guid: cfe819de0515b594eafa41c4407b6258, type: 2}
-  - {fileID: 11400000, guid: 3ae1e7fe0b54f294cae73fed6d90daa8, type: 2}
-  - {fileID: 11400000, guid: 509d6e24323cd404ea0b128b5ab8ca56, type: 2}
-  - {fileID: 11400000, guid: 00d53eaf4ac94054f94eccfca9cff202, type: 2}
-  - {fileID: 11400000, guid: 3ebea8d9b2914864698c5cad9f360bda, type: 2}
-  - {fileID: 11400000, guid: be13f71e557272b4fbfae02e5208e141, type: 2}
-  - {fileID: 11400000, guid: 19ae85ed832dc2b45b05bcf6ef3a7b96, type: 2}
-  - {fileID: 11400000, guid: fcb0c5d81a1b2624d82a6ce16c9c736e, type: 2}
-  - {fileID: 11400000, guid: a224f0b6259776f4c86c9a55e1ffeb27, type: 2}
-  - {fileID: 11400000, guid: 49554a3971ccd4e4589c6021fbb895b3, type: 2}
-  - {fileID: 11400000, guid: 3c3e2a62d4557a340b25949bef41f6ff, type: 2}
-  - {fileID: 11400000, guid: 890b2ae3865a08845b60da1a0d5190ce, type: 2}
-  - {fileID: 11400000, guid: b38b4fb7d7cf38e439caf8b589dc7e15, type: 2}
-  - {fileID: 11400000, guid: 404df0c05eafaa7428fb1689635a5c78, type: 2}
-  - {fileID: 11400000, guid: adf59af18932fa74685050c6f1f4f1f1, type: 2}
-  - {fileID: 11400000, guid: ded6a57199d818444b0efc9a0aee85b5, type: 2}
-  - {fileID: 11400000, guid: a8a92e97b6be64e429b96108967ef3d1, type: 2}
-  - {fileID: 11400000, guid: fedab92529b80a349960db1dee26a93e, type: 2}
-  - {fileID: 11400000, guid: 691b47c6c1c08954898bae0d08975bfe, type: 2}
-  - {fileID: 11400000, guid: ac4594a0964da2a4f8d945d1be7c07ff, type: 2}
-  - {fileID: 11400000, guid: e3df4e17d7bc1074abd94189d5eeec4b, type: 2}
-  - {fileID: 11400000, guid: b77c6d5234c1ec44fb70180700b27177, type: 2}
-  - {fileID: 11400000, guid: 7d640ab527b35224b9e8220f34740672, type: 2}
-  - {fileID: 11400000, guid: ed2be2a0cf5ae5842af9f525b6aa15bf, type: 2}
-  - {fileID: 11400000, guid: 4e676ef8b70c091488239894e572a782, type: 2}
-  - {fileID: 11400000, guid: df3aca1a3af369f499aaaa9911281f10, type: 2}
-  - {fileID: 11400000, guid: 8278d88cea025bd498ffcec7ba5cfe47, type: 2}
-  - {fileID: 11400000, guid: 8cc91d172343b884092a36f2caed7818, type: 2}
-  - {fileID: 11400000, guid: c6705fbfaad2c25499084fd030bf7a6c, type: 2}
-  - {fileID: 11400000, guid: b51c5b525ab1d27428988fbd8f6b2bd0, type: 2}
-  - {fileID: 11400000, guid: 0358226ac8ab88d47a06cb25e78f3813, type: 2}
-  - {fileID: 11400000, guid: 9a5f945e1aeac9a4eafcaa70dce7b4d7, type: 2}
-  - {fileID: 11400000, guid: a258d6648a4bb314f996c12cded2ba54, type: 2}
-  - {fileID: 11400000, guid: 3e4926d91042b6041ae6661ee11693c8, type: 2}
-  - {fileID: 11400000, guid: 56fcad7d69ce98b47a71e5d60de1c285, type: 2}
-  - {fileID: 11400000, guid: 4c96a645506c8f2479b31dc45cea186b, type: 2}
-  - {fileID: 11400000, guid: 1943ef2e2bc9f794f8dcf3490e257cb2, type: 2}
-  - {fileID: 11400000, guid: 86a6efd83bc3dc04888e174202353374, type: 2}
-  - {fileID: 11400000, guid: 7680b924c43db8049b851f0df87bb7bd, type: 2}
-  - {fileID: 11400000, guid: d5fb2146b0a21414cb682b53c31d5bf8, type: 2}
-  - {fileID: 11400000, guid: df74f1f392ca2ef4690899744a846be1, type: 2}
-  - {fileID: 11400000, guid: bd742f895db581a409743de27f1fcc52, type: 2}
-  - {fileID: 11400000, guid: 311b8b792f92b4947b39d2668e4edd7e, type: 2}
-  - {fileID: 11400000, guid: 7f296d61875412944a6ef64e4f70bb67, type: 2}
-  - {fileID: 11400000, guid: 36efb221aaf9b584eb96f331e2bade66, type: 2}
-  - {fileID: 11400000, guid: 0c0a9c2b8899d5e49a928e9b8e5aced9, type: 2}
-  - {fileID: 11400000, guid: aec7b16ba60905d4bbca7cc05de13a90, type: 2}
-  - {fileID: 11400000, guid: 13d287bde63c2704fb450706abbbad46, type: 2}
-  - {fileID: 11400000, guid: 9a79de41263c8d445833a8af1f407efd, type: 2}
-  - {fileID: 11400000, guid: 01e70bdf9a9f0e643b16bc89bbd721a1, type: 2}
-  - {fileID: 11400000, guid: 597b7a948e6032645804b7da21d2d931, type: 2}
-  - {fileID: 11400000, guid: c43d41414d0e42d458fef2e8a913204f, type: 2}
-  - {fileID: 11400000, guid: 2a33c5e6d5c4c684bb6979b946f03278, type: 2}
-  - {fileID: 11400000, guid: 94684dd4c632a3340b11202810d4200a, type: 2}
-  - {fileID: 11400000, guid: d1682a5840c3c1f4e8c92994a15755b6, type: 2}
-  - {fileID: 11400000, guid: 4c2e7f9803e717b4ca72e109ac3afbf9, type: 2}
-  - {fileID: 11400000, guid: ed987cc810cd3a64d8afa0f1b91f4420, type: 2}
-  - {fileID: 11400000, guid: 6033d5c2d10f84e48b094dbf4d2010d5, type: 2}
-  - {fileID: 11400000, guid: 7b1f65fae98f85f46be516a1f6810f3a, type: 2}
-  - {fileID: 11400000, guid: a9c05de305ba8a2458194a9dbeb0b20c, type: 2}
-  - {fileID: 11400000, guid: a78c6d1788370ab4cae7e451e519df79, type: 2}
+  - {fileID: 11400000, guid: 6ae7fbac6785316429876c27279783fc, type: 2}
+  - {fileID: 11400000, guid: ef11bbf9be27d5c47b98f466330daff7, type: 2}
+  - {fileID: 11400000, guid: e602422b2d845824d8066f2a1723129c, type: 2}
   protagonistNames:
-  - Freddy
-  - Bonnie
-  - Chica
-  - Foxy
-  - cassidy
-  - cassidy2
-  - cassidy8bit
-  - none
-  - bfscared
-  - bfscared2
-  - bfrun
-  - bfsit
-  - bfmangle
-  - bffront
-  - bfnonever
-  - bfnonever2
-  - bfnonever3
-  - bfback
-  - bfbackfire
-  - nobfbb
-  - bf3
-  - bflean
-  - bflean2
+  - bf
   - bf2
-  - phbonnie
-  - purple dad
-  - frank
-  - securityguy
-  - securityguy2
-  - waffletrap
-  - waffletrap2
-  - waffletrap3
-  - charlie
-  - oobsbonnie
-  - oobsbonnie2
-  - bfFred
-  - bfNothingPhantoms
+  - bfCatnapClimb
   protagonists:
-  - {fileID: 11400000, guid: 64105e9c25847d74f9af0a22ae85ea85, type: 2}
-  - {fileID: 11400000, guid: 20d27413b659ec640ae6593f467314e3, type: 2}
-  - {fileID: 11400000, guid: 922b4ddb58b8946468f589530ef94374, type: 2}
-  - {fileID: 11400000, guid: a844989e310f552439f6e0e24c92af95, type: 2}
-  - {fileID: 11400000, guid: 9aff936de3f52e84797967dd61cf784d, type: 2}
-  - {fileID: 11400000, guid: 1c052d133589112498be415460c13326, type: 2}
-  - {fileID: 11400000, guid: 7eb037c04a1f2ea4a96edd27486eb59d, type: 2}
-  - {fileID: 11400000, guid: 9287b22df5031f34a86628f59ad0169f, type: 2}
-  - {fileID: 11400000, guid: 202d86bc7022f0d46845e40200a21b0f, type: 2}
-  - {fileID: 11400000, guid: af5ac7def3b27d34eaa2d3538b42dad2, type: 2}
-  - {fileID: 11400000, guid: 1a4781af480c8144f9334c8920057ad5, type: 2}
-  - {fileID: 11400000, guid: a673786e31d614447bec9afaeb71d06e, type: 2}
-  - {fileID: 11400000, guid: 9374baacbc0042a47aacdc4917026a07, type: 2}
-  - {fileID: 11400000, guid: 8ac2186d72d2b394a99da8e98a3bd5a6, type: 2}
-  - {fileID: 11400000, guid: c7e9cc06ba9193f46a945b87ecc5ab52, type: 2}
-  - {fileID: 11400000, guid: d11dd233a03a8f145ac0ecaff193d646, type: 2}
-  - {fileID: 11400000, guid: 0f67d4ad8d15b034b872c618e9def6c1, type: 2}
-  - {fileID: 11400000, guid: eed006ac33b1e084a8a905be6b1883d4, type: 2}
-  - {fileID: 11400000, guid: 02ea20fdd4f69ea4b8897e58bb3b2dac, type: 2}
-  - {fileID: 11400000, guid: c9aaff3323846c24ab1ee6c8b6eb2907, type: 2}
-  - {fileID: 11400000, guid: 9678af9f3f102e94e8e07f926a1a38e7, type: 2}
-  - {fileID: 11400000, guid: 655252b8ad4c887468036f0c8a60f97d, type: 2}
-  - {fileID: 11400000, guid: 74829864080ace845a24c74971d71b57, type: 2}
-  - {fileID: 11400000, guid: 9db7447be83669d47ab1ed649e783d0a, type: 2}
-  - {fileID: 11400000, guid: ea3788f1ee13c434a83d482604f89af3, type: 2}
-  - {fileID: 11400000, guid: b3f1b2dbd8ac8f5439af223bd511a4a0, type: 2}
-  - {fileID: 11400000, guid: 1edb53210dfeb694396a4fd3b4e7900c, type: 2}
-  - {fileID: 11400000, guid: eab315ba3b46e69448e764a8ef0bd983, type: 2}
-  - {fileID: 11400000, guid: 9b43fbe8c82d0a04f801f7fdafc2861c, type: 2}
-  - {fileID: 11400000, guid: 20230065c154ec34893ea0863fc4cfef, type: 2}
-  - {fileID: 11400000, guid: 159668800ce936f45a806a1836d9c2b6, type: 2}
-  - {fileID: 11400000, guid: a81a40855b35e5546bee19e48863f3c1, type: 2}
-  - {fileID: 11400000, guid: 7659d3a2fcd4c84469e61e37a7e835ed, type: 2}
-  - {fileID: 11400000, guid: 6d25dcaa3fe4c8d44a1d3c43f5a0a2d7, type: 2}
-  - {fileID: 11400000, guid: 0e29c48d3b2229e4abaaf8d91fab7011, type: 2}
-  - {fileID: 11400000, guid: 654c1f86fca8ce4408486462a2d22e1f, type: 2}
-  - {fileID: 11400000, guid: b8cf15bd4789bef4eba93e7674b20f6b, type: 2}
+  - {fileID: 11400000, guid: bd34676332f50ee46823319efa310eda, type: 2}
+  - {fileID: 11400000, guid: 41fce9ae42847a5498c1f3ef0ca89343, type: 2}
+  - {fileID: 11400000, guid: 11cde8550e2ff65408a9fe722d5727d2, type: 2}
   defaultEnemy: {fileID: 11400000, guid: 4a2e2fd275eca8b42ae438869101dc28, type: 2}
   girlfriendObject: {fileID: 1846954269}
   girlfriendAnimator: {fileID: 1846954270}
@@ -21029,31 +20835,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 29544e7e1b2378a4f808ece6f4fcddff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  par: {fileID: 0}
-  redConsequences: {fileID: 0}
-  redAlways: {fileID: 0}
-  blackConsequences: {fileID: 0}
-  creditMenu: {fileID: 0}
   inGameAnimation: {fileID: 2133487112}
-  jumpScare: {fileID: 0}
-  subtitles: {fileID: 0}
-  subtitleAnim: {fileID: 0}
-  firstOffsetPlayer1: {x: 0, y: 0, z: 0}
-  firstOffsetPlayer2: {x: 0, y: 0, z: 0}
   isAnimationOver: 1
   isAnimationOverBF: 1
   effectsEnabled: 0
   c: []
-  characters: []
-  protagonists: []
-  nonsensess: {fileID: 11400000, guid: baa73ad8548ee314cbcc4535f5f8b84b, type: 2}
-  bff: {fileID: 11400000, guid: 8d87aa7d18236e94ba2a9349cbecac34, type: 2}
   txtSpawnPoint: {fileID: 1518681020}
   setSpawn: {fileID: 322133012}
   sourceSetSpawn: {fileID: 1518681023}
   setSpawnClip: {fileID: 8300000, guid: c2e7f63e219c17c40b8832eb2f05a4f9, type: 3}
   subtitleImg: {fileID: 827722684}
   subtitleText: {fileID: 1403734588}
+  critters: {fileID: 931708716}
+  gpCamera: {fileID: 266902058}
+  thing: {fileID: 704162418}
 --- !u!114 &578016976
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21086,25 +20881,6 @@ MonoBehaviour:
   whiteUi: {fileID: 1731669645}
   purple: {fileID: 1752665607}
   waffleGlow: {fileID: 1000907395}
-  hallucinations: {fileID: 493732360}
-  hallucinationsImg:
-  - {fileID: 21300000, guid: 9fc7e9f9c3375a941be58cadf14e0f71, type: 3}
-  - {fileID: 21300000, guid: 0003aca9c10faf649857317e4caadbe4, type: 3}
-  - {fileID: 21300000, guid: 062cc769280e9044e9c5fc7a69294046, type: 3}
-  - {fileID: 21300000, guid: a8701bd0b5bb8394d91fdb774f969970, type: 3}
-  - {fileID: 21300000, guid: 9926a68e4cf3c594a830a2152b99b3f6, type: 3}
-  - {fileID: 21300000, guid: 23ddabce27199eb459a6674df863ab74, type: 3}
-  - {fileID: 21300000, guid: 1acb0303fa0c0e24ca9b9a4b3d1d5869, type: 3}
-  - {fileID: 21300000, guid: 0ce772d70e50a594d8478b00d2c36ec0, type: 3}
-  hallucinationsName:
-  - bon
-  - cassid
-  - chic
-  - fox
-  - fred
-  - gfed
-  - gfed2
-  - itsme
 --- !u!1 &582952850
 GameObject:
   m_ObjectHideFlags: 0
@@ -25575,6 +25351,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -140, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &704162418
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 704162419}
+  - component: {fileID: 704162421}
+  - component: {fileID: 704162420}
+  m_Layer: 8
+  m_Name: Thing
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &704162419
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704162418}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1887014239}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 1280, y: 720}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &704162420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704162418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 8124e70f3066ecb4f96f9a4b2a50b5bf, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &704162421
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 704162418}
+  m_CullTransparentMesh: 1
 --- !u!1 &704831719
 GameObject:
   m_ObjectHideFlags: 0
@@ -34239,6 +34090,7 @@ GameObject:
   - component: {fileID: 931708715}
   - component: {fileID: 931708714}
   - component: {fileID: 931708716}
+  - component: {fileID: 931708717}
   m_Layer: 8
   m_Name: Critter
   m_TagString: Untagged
@@ -34262,7 +34114,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 390.11, y: -129.5}
+  m_AnchoredPosition: {x: 390.52, y: -600.94}
   m_SizeDelta: {x: 617, y: 461}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &931708714
@@ -34324,6 +34176,62 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &931708717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 931708712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 0
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 931708714}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 578016975}
+        m_TargetAssemblyTypeName: MainEventSystem, Assembly-CSharp
+        m_MethodName: OnCrittersOut
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &934275930
 GameObject:
   m_ObjectHideFlags: 0
@@ -54069,7 +53977,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1536279438
 RectTransform:
   m_ObjectHideFlags: 0
@@ -64666,6 +64574,7 @@ RectTransform:
   - {fileID: 630965281}
   - {fileID: 1518681019}
   - {fileID: 322133011}
+  - {fileID: 704162419}
   - {fileID: 1913522624}
   - {fileID: 1718276504}
   m_Father: {fileID: 0}

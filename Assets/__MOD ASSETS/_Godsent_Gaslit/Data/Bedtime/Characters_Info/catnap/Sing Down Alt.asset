@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 04e6f6b396aaad8409ac6804e2834b12, type: 3}
+  m_Name: Sing Down Alt
+  m_EditorClassIdentifier: 
+  animationName: Sing Down Alt
+  fps: 24
+  frames:
+  - sprite: {fileID: 2297891960691397550, guid: e93c3d955b81431429a450b9e00497ef,
+      type: 3}
+    offset: {x: 0, y: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  - sprite: {fileID: 8467224400368023480, guid: e93c3d955b81431429a450b9e00497ef,
+      type: 3}
+    offset: {x: 0, y: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  - sprite: {fileID: -8749796212118955163, guid: e93c3d955b81431429a450b9e00497ef,
+      type: 3}
+    offset: {x: 0, y: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  - sprite: {fileID: 8873445631510119342, guid: e93c3d955b81431429a450b9e00497ef,
+      type: 3}
+    offset: {x: 0, y: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  - sprite: {fileID: 7746353752025398601, guid: e93c3d955b81431429a450b9e00497ef,
+      type: 3}
+    offset: {x: 0, y: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  - sprite: {fileID: -5204451142138225034, guid: e93c3d955b81431429a450b9e00497ef,
+      type: 3}
+    offset: {x: 0, y: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  - sprite: {fileID: -5304229581942921272, guid: e93c3d955b81431429a450b9e00497ef,
+      type: 3}
+    offset: {x: 0, y: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  - sprite: {fileID: 5035821468946250628, guid: e93c3d955b81431429a450b9e00497ef,
+      type: 3}
+    offset: {x: 0, y: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  - sprite: {fileID: -2081278628493925688, guid: e93c3d955b81431429a450b9e00497ef,
+      type: 3}
+    offset: {x: 0, y: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  - sprite: {fileID: 6824625575653819514, guid: e93c3d955b81431429a450b9e00497ef,
+      type: 3}
+    offset: {x: 0, y: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  - sprite: {fileID: 2638446951219047236, guid: e93c3d955b81431429a450b9e00497ef,
+      type: 3}
+    offset: {x: 0, y: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  - sprite: {fileID: 6624149599905981915, guid: e93c3d955b81431429a450b9e00497ef,
+      type: 3}
+    offset: {x: 0, y: 0}
+    rotation: {x: 0, y: 0, z: 0, w: 0}
+  sprites: []
+  spriteAnimationType: 1

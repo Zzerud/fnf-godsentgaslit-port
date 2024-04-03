@@ -15,43 +15,35 @@ MonoBehaviour:
   characterName: bf2
   animations:
   - {fileID: 11400000, guid: eabf32631a6c6ff4fac3dfce854e17a1, type: 2}
-  - {fileID: 11400000, guid: b506a98603620bf48bcaa868638b94d0, type: 2}
-  - {fileID: 11400000, guid: ed843cf6fb870b54c9510bbdab2e2084, type: 2}
   - {fileID: 11400000, guid: a2f3651a85862c147a3cb112270bd18f, type: 2}
-  - {fileID: 11400000, guid: e3c4c27ff614cb242a1e5ec7ff9ac70d, type: 2}
-  - {fileID: 11400000, guid: bc04ce6642b49ff438c23a410141351d, type: 2}
   - {fileID: 11400000, guid: 75779d3177661a24a9c7cfd88fbbc12a, type: 2}
-  - {fileID: 11400000, guid: be7cf6d5740e5b44b83616c080ccb390, type: 2}
-  - {fileID: 11400000, guid: 09a7c23f74b95954e855324c9d7903d5, type: 2}
   - {fileID: 11400000, guid: bc2ad89339e6a794095cc75a3d1f2dd7, type: 2}
-  - {fileID: 11400000, guid: d0fa48a2377287545ad8bf4b7524ab3c, type: 2}
-  - {fileID: 11400000, guid: 034aa99a22b32414eacef969fa1edbb4, type: 2}
   - {fileID: 11400000, guid: 89fbc59e70278334bb732d19e9fb0049, type: 2}
   idleOnly: 0
   doesFloat: 0
   floatToOffset: 0
   floatSpeed: 0
-  scale: 1
-  cameraOffset: {x: 2, y: 6}
-  orthographicSize: 5.5
-  yToUp: 0
-  yToDown: 0
-  xToLeft: 0
-  xToRight: 0
-  portrait: {fileID: 0}
-  portraitDead: {fileID: 0}
-  portraitWin: {fileID: 0}
+  scale: 1.199683
+  cameraOffset: {x: -1.8, y: 4.3}
+  orthographicSize: 4.1
+  yToUp: 4.3
+  yToDown: 4.3
+  xToLeft: -1.8
+  xToRight: -1.8
+  portrait: {fileID: 1649700468, guid: 984ef57945dbff84eb43fcd5844f7083, type: 3}
+  portraitDead: {fileID: 853154982, guid: 984ef57945dbff84eb43fcd5844f7083, type: 3}
+  portraitWin: {fileID: 1649700468, guid: 984ef57945dbff84eb43fcd5844f7083, type: 3}
   portraitSize: {x: 0, y: 0}
   isRotatedIcon: 0
-  isCustomPosition: 0
-  newTransform: {x: 0, y: 0, z: 0}
+  isCustomPosition: 1
+  newTransform: {x: -1.84, y: 0, z: 0}
   changeColor: 0
-  healthColor: {r: 1, g: 0, b: 0, a: 1}
-  songDurationColor: {r: 0, g: 0, b: 0, a: 0}
+  healthColor: {r: 0.29803923, g: 0.78823537, b: 1, a: 1}
+  songDurationColor: {r: 0.29803923, g: 0.78823537, b: 1, a: 1}
   isRotated: 0
   isBobingWhileSing: 0
-  noMissAnimations: 0
-  deathAnimator: {fileID: 0}
+  noMissAnimations: 1
+  deathAnimator: {fileID: 22100000, guid: 31f6d524429aeb84f9ea2b6e0afa732f, type: 2}
   isVideoDeath: 0
   videoDeath: {fileID: 0}
   audioDeath: {fileID: 0}

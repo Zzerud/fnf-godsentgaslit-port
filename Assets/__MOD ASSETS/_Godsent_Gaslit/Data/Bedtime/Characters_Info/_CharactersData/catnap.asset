@@ -19,11 +19,15 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 2084732490a749241b03659feaa79949, type: 2}
   - {fileID: 11400000, guid: 81888b2376688d940afb84f72c6af21b, type: 2}
   - {fileID: 11400000, guid: e7a1f030caa2d3244995ef04a35a5bc2, type: 2}
+  - {fileID: 11400000, guid: 5c95c48c5d621e6469664394797cfbe5, type: 2}
+  - {fileID: 11400000, guid: de72e2eed9eed694dbddf374d32c8858, type: 2}
+  - {fileID: 11400000, guid: 17283dd0615d75b4fab74a47a94ec7a1, type: 2}
+  - {fileID: 11400000, guid: a658db85ed068154c8ef37bdca2de33a, type: 2}
   idleOnly: 0
   doesFloat: 0
   floatToOffset: 0
   floatSpeed: 0
-  scale: 1
+  scale: 0.7689291
   cameraOffset: {x: 0, y: 2.8}
   orthographicSize: 2.4
   yToUp: 3.3
@@ -35,8 +39,8 @@ MonoBehaviour:
   portraitWin: {fileID: 1346896497, guid: 194ebf77861067d4fbd2eb3d2f3001cb, type: 3}
   portraitSize: {x: 0, y: 0}
   isRotatedIcon: 0
-  isCustomPosition: 0
-  newTransform: {x: 0, y: 0, z: 0}
+  isCustomPosition: 1
+  newTransform: {x: -2.95, y: 0.68, z: 0}
   changeColor: 0
   healthColor: {r: 0.41960788, g: 0.2901961, b: 0.4431373, a: 1}
   songDurationColor: {r: 0.41960788, g: 0.2901961, b: 0.4431373, a: 1}

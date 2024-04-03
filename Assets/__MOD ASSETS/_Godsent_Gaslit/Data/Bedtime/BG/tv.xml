@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<TextureAtlas imagePath="tv.png"><SubTexture name="idle0000" x="2568" y="0" width="334" height="509" frameX="-151" frameY="-211" frameWidth="642" frameHeight="720" />
+<SubTexture name="idle0001" x="2568" y="509" width="334" height="509" frameX="-151" frameY="-211" frameWidth="642" frameHeight="720" />
+<SubTexture name="idle0002" x="2568" y="1018" width="334" height="509" frameX="-151" frameY="-211" frameWidth="642" frameHeight="720" />
+<SubTexture name="idle0003" x="2568" y="1527" width="334" height="509" frameX="-151" frameY="-211" frameWidth="642" frameHeight="720" />
+<SubTexture name="idle0004" x="0" y="2160" width="334" height="509" frameX="-151" frameY="-211" frameWidth="642" frameHeight="720" />
+<SubTexture name="idle0005" x="334" y="2160" width="334" height="509" frameX="-151" frameY="-211" frameWidth="642" frameHeight="720" />
+<SubTexture name="sing0000" x="0" y="0" width="642" height="720" frameX="0" frameY="0" frameWidth="642" frameHeight="720" />
+<SubTexture name="sing0001" x="642" y="0" width="642" height="720" frameX="0" frameY="0" frameWidth="642" frameHeight="720" />
+<SubTexture name="sing0002" x="1284" y="0" width="642" height="720" frameX="0" frameY="0" frameWidth="642" frameHeight="720" />
+<SubTexture name="sing0003" x="0" y="720" width="642" height="720" frameX="0" frameY="0" frameWidth="642" frameHeight="720" />
+<SubTexture name="sing0004" x="642" y="720" width="642" height="720" frameX="0" frameY="0" frameWidth="642" frameHeight="720" />
+<SubTexture name="sing0005" x="1284" y="720" width="642" height="720" frameX="0" frameY="0" frameWidth="642" frameHeight="720" />
+<SubTexture name="sing0006" x="1926" y="0" width="642" height="720" frameX="0" frameY="0" frameWidth="642" frameHeight="720" />
+<SubTexture name="sing0007" x="1926" y="720" width="642" height="720" frameX="0" frameY="0" frameWidth="642" frameHeight="720" />
+<SubTexture name="sing0008" x="0" y="1440" width="642" height="720" frameX="0" frameY="0" frameWidth="642" frameHeight="720" />
+<SubTexture name="sing0009" x="642" y="1440" width="642" height="720" frameX="0" frameY="0" frameWidth="642" frameHeight="720" />
+<SubTexture name="sing0010" x="1284" y="1440" width="642" height="720" frameX="0" frameY="0" frameWidth="642" frameHeight="720" />
+<SubTexture name="sing0011" x="1926" y="1440" width="392" height="565" frameX="-115" frameY="-155" frameWidth="642" frameHeight="720" />
+<SubTexture name="sing0012" x="2568" y="509" width="334" height="509" frameX="-151" frameY="-211" frameWidth="642" frameHeight="720" />
+</TextureAtlas>

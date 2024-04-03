@@ -7,7 +7,8 @@ using UnityEngine.Video;
 
 public class BedtimeScript : MonoBehaviour
 {
-    public GameObject blackAndWhite, scene1;
+    public GameObject blackAndWhite, scene1, scene2, scene3, fog1, fog2;
+    public SpriteRenderer fog4;
 
     [Space(15)]
     public PostProcessProfile a;
@@ -16,12 +17,13 @@ public class BedtimeScript : MonoBehaviour
     public SpriteRenderer blackFlash;
     public SpriteRenderer whiteFlash;
 
-    public VideoClip firstSceneClip;
+    public VideoClip firstSceneClip, nightmare, tv;
 
+    public Camera t;
     private void Start()
     {
         blackAndWhite.SetActive(true);
-        CameraMovement.instance.volume.profile = a;
+        //CameraMovement.instance.volume.profile = a;
 
         scene1.SetActive(true);
 
@@ -31,6 +33,46 @@ public class BedtimeScript : MonoBehaviour
         VideoPlayedInstance.instance.clip = firstSceneClip;
         VideoPlayedInstance.instance.player.clip = firstSceneClip;
         VideoPlayedInstance.instance.player.Prepare();
+        fog4.DOFade(0, 0);
+
+
+        if (Player.playAsEnemy)
+        {
+            foreach (SpriteRenderer sprite in Song.instance.player1NoteSprites)
+            {
+                sprite.enabled = false;
+            }
+
+
+            foreach (SpriteRenderer sprite in Song.instance.player2NoteSprites)
+            {
+                sprite.enabled = true;
+            }
+
+        }
+        else
+        {
+            foreach (SpriteRenderer sprite in Song.instance.player1NoteSprites)
+            {
+                sprite.enabled = true;
+            }
+            foreach (SpriteRenderer sprite in Song.instance.player2NoteSprites)
+            {
+                sprite.enabled = false;
+            }
+
+        }
+    }
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            t.DOShakeRotation(0.1f, -3, 0, 0);
+        }
+        else if (Input.GetKeyDown(KeyCode.D))
+        {
+            t.DOShakeRotation(0.1f, 3, 0, 0);
+        }
     }
     public void ChangeWhiteFade(string fadeType, string time)
     {
@@ -87,7 +129,52 @@ public class BedtimeScript : MonoBehaviour
 						"On"
 					],*/
     }
+    
+    public void FirstPersonFight()
+    {
+        scene1.SetActive(false);
+        scene2.SetActive(true);
+        CameraShake.instance.Flash("1.001");
+        MainEventSystem.instance.ChangeCharacterEnemyWithoutFlash("catnap2");
+        MainEventSystem.instance.ChangeCharacterPlayer("bf2");
+    }
+    public void BackToNormal()
+    {
+        scene1.SetActive(true);
+        scene2.SetActive(false);
+        fog1.SetActive(false);
+        fog2.SetActive(true);
+        CameraShake.instance.Flash("1.001");
+        MainEventSystem.instance.ChangeCharacterEnemyWithoutFlash("catnap");
+        MainEventSystem.instance.ChangeCharacterPlayer("bf");
+    }
+    public void Gas()
+    {
+        MainEventSystem.instance.PlayCutSceneEnemy("gas");
+        fog4.DOFade(1, 4);
+        VideoPlayedInstance.instance.player.clip = nightmare;
+        VideoPlayedInstance.instance.player.Prepare();
+    }
+    public void PlayVid()
+    {
+        AddCameraZoom("0.3");
+        VideoPlayedInstance.instance.player.Play();
+        VideoPlayedInstance.instance.raw.SetActive(true);
+        MainEventSystem.instance.PlayCutSceneEnemy("gas");
 
+    }
+    public void ClimbCatnap()
+    {
+        MainEventSystem.instance.ChangeCharacterEnemyWithoutFlash("catnapclimb");
+        MainEventSystem.instance.ChangeCharacterPlayer("bfCatnapClimb");
+        scene1.SetActive(false);
+        scene3.SetActive(true);
+        ChangeWhiteFade("outBlack", "3.5");
+        VideoPlayedInstance.instance.raw.SetActive(false);
+        VideoPlayedInstance.instance.player.Stop();
+        VideoPlayedInstance.instance.player.clip = tv;
+        VideoPlayedInstance.instance.player.Prepare();
+    }
 
     #region NeedToAllOfScripts
     public void AddCameraZoom(string to)

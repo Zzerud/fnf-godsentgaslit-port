@@ -23,20 +23,20 @@ MonoBehaviour:
   doesFloat: 0
   floatToOffset: 0
   floatSpeed: 0
-  scale: 1
+  scale: 0.8
   cameraOffset: {x: -3.2, y: 3}
   orthographicSize: 3
   yToUp: 3.5
   yToDown: 2.5
-  xToLeft: -2.7
-  xToRight: -3.7
+  xToLeft: -3.7
+  xToRight: -2.7
   portrait: {fileID: 1649700468, guid: 984ef57945dbff84eb43fcd5844f7083, type: 3}
   portraitDead: {fileID: 853154982, guid: 984ef57945dbff84eb43fcd5844f7083, type: 3}
   portraitWin: {fileID: 1649700468, guid: 984ef57945dbff84eb43fcd5844f7083, type: 3}
   portraitSize: {x: 0, y: 0}
   isRotatedIcon: 0
-  isCustomPosition: 0
-  newTransform: {x: 0, y: 0, z: 0}
+  isCustomPosition: 1
+  newTransform: {x: -9.38, y: -0.2, z: 0}
   changeColor: 0
   healthColor: {r: 0.29803923, g: 0.78823537, b: 1, a: 1}
   songDurationColor: {r: 0.29803923, g: 0.78823537, b: 1, a: 1}

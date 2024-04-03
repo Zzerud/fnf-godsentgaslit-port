@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3b0f53c1e627594eab326dc8f35a385, type: 3}
+  m_Name: bfCatnapClimb
+  m_EditorClassIdentifier: 
+  characterName: bfCatnapClimb
+  animations:
+  - {fileID: 11400000, guid: 057a8da64e0638941a0a8a8eee2bf72a, type: 2}
+  - {fileID: 11400000, guid: f3ca25f5a38207f4e821fec70a2d6f6e, type: 2}
+  - {fileID: 11400000, guid: e923cfd444c1ba8469ead0e74576ff40, type: 2}
+  - {fileID: 11400000, guid: 2d2072e8dd000ca40baa5f4ece678a57, type: 2}
+  - {fileID: 11400000, guid: 5855792de3f8d9948beff334baae1b1f, type: 2}
+  idleOnly: 0
+  doesFloat: 0
+  floatToOffset: 0
+  floatSpeed: 0
+  scale: 0.8
+  cameraOffset: {x: -1.2, y: 5.5}
+  orthographicSize: 3.2
+  yToUp: 6
+  yToDown: 5
+  xToLeft: -1.7
+  xToRight: -0.7
+  portrait: {fileID: 1649700468, guid: 984ef57945dbff84eb43fcd5844f7083, type: 3}
+  portraitDead: {fileID: 853154982, guid: 984ef57945dbff84eb43fcd5844f7083, type: 3}
+  portraitWin: {fileID: 1649700468, guid: 984ef57945dbff84eb43fcd5844f7083, type: 3}
+  portraitSize: {x: 0, y: 0}
+  isRotatedIcon: 0
+  isCustomPosition: 1
+  newTransform: {x: 15, y: -27.4, z: 0}
+  changeColor: 0
+  healthColor: {r: 0.29803923, g: 0.78823537, b: 1, a: 1}
+  songDurationColor: {r: 0.29803923, g: 0.78823537, b: 1, a: 1}
+  isRotated: 0
+  isBobingWhileSing: 0
+  noMissAnimations: 1
+  deathAnimator: {fileID: 22100000, guid: 31f6d524429aeb84f9ea2b6e0afa732f, type: 2}
+  isVideoDeath: 0
+  videoDeath: {fileID: 0}
+  audioDeath: {fileID: 0}

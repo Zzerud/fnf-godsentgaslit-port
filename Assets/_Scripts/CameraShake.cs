@@ -13,9 +13,6 @@ public class CameraShake : MonoBehaviour
     public Graphic whiteUi;
     public Graphic purple;
     public Graphic waffleGlow;
-    public Image hallucinations;
-    public Sprite[] hallucinationsImg;
-    public string[] hallucinationsName;
 
     private float shakeIntensity = 0.3f;
     private float shakeDuration = 0.5f;
@@ -30,7 +27,6 @@ public class CameraShake : MonoBehaviour
         whiteUi.CrossFadeAlpha(0, 0, false);
         purple.CrossFadeAlpha(0, 0, false);
         waffleGlow.CrossFadeAlpha(0, 0, false);
-        hallucinations.enabled = false;
         if (cameraTransform == null)
         {
             cameraTransform = GetComponent<Transform>();
@@ -88,24 +84,4 @@ public class CameraShake : MonoBehaviour
         CameraMovement.instance.enableMovement = true;
     }
 
-    public void ChangeHallucinations(string Name, string isOn)
-    {
-        if(isOn == "on")
-        {
-            hallucinations.enabled = true;
-
-            for (int i = 0; i < hallucinationsName.Length; i++)
-            {
-                if (Name == hallucinationsName[i])
-                {
-                    hallucinations.sprite = hallucinationsImg[i];
-                }
-            }
-        }
-        else
-        {
-            hallucinations.enabled = false;
-        }
-        
-    }
 }

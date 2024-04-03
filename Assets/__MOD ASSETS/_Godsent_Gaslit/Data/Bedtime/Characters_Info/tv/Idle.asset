@@ -15,7 +15,8 @@ MonoBehaviour:
   animationName: Idle
   fps: 24
   frames:
-  - sprite: {fileID: 1732778074, guid: b366f7df296574d49b5a6c1cddce7846, type: 3}
+  - sprite: {fileID: -757215924695959776, guid: c51a6e436545eec4b89d86f1a2557b8c,
+      type: 3}
     offset: {x: 0, y: 0}
     rotation: {x: 0, y: 0, z: 0, w: 0}
   sprites: []
