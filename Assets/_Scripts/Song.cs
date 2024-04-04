@@ -896,8 +896,8 @@ public class Song : MonoBehaviour
                 {
                     if (BedtimeScript.instance.isTvScene)
                     {
-                        BedtimeScript.instance.tvs.SetTrigger("Idle");
-                        BedtimeScript.instance.tvs.ResetTrigger("EndIdle");
+                        BedtimeScript.instance.activeTv.SetActive(false);
+                        BedtimeScript.instance.inactiveTv.SetActive(true);
 
                     }
                 }
@@ -1978,8 +1978,8 @@ public class Song : MonoBehaviour
                     invertHealth = true;
                 if (BedtimeScript.instance.isTvScene)
                 {
-                    BedtimeScript.instance.tvs.SetTrigger("EndIdle");
-                    BedtimeScript.instance.tvs.ResetTrigger("Idle");
+                    BedtimeScript.instance.activeTv.SetActive(true);
+                    BedtimeScript.instance.inactiveTv.SetActive(false);
                 }
                 switch (noteType)
                 {
@@ -2861,6 +2861,15 @@ public class Song : MonoBehaviour
                         if (_currentEnemyIdleTimer <= 0 & currentBeat % 2 == 0)
                         {
                             opponentAnimator.Play("Idle");
+                            if (BedtimeScript.instance)
+                            {
+                                if (BedtimeScript.instance.isTvScene)
+                                {
+                                    BedtimeScript.instance.activeTv.SetActive(false);
+                                    BedtimeScript.instance.inactiveTv.SetActive(true);
+
+                                }
+                            }
                             CameraMovement.instance.playerTwoOffset = CameraMovement.instance._defaultPositionPlayer2;
                             
                         }

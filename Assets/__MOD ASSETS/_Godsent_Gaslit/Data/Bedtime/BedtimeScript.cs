@@ -13,6 +13,7 @@ public class BedtimeScript : MonoBehaviour
     public GameObject blackAndWhite, scene1, scene2, scene3, scene4, scene5, scene6, fog1, fog2;
     public SpriteRenderer fog4;
     public Animator tvs;
+    public GameObject activeTv, inactiveTv;
 
     [Space(15)]
     public PostProcessProfile a;
@@ -158,7 +159,7 @@ public class BedtimeScript : MonoBehaviour
         VideoPlayedInstance.instance.player.Play();
         VideoPlayedInstance.instance.raw.SetActive(true);
         MainEventSystem.instance.thing.SetActive(false);
-
+        GamePlayCamera.instance.analog.enabled = false;
     }
     public void ClimbCatnap()
     {
@@ -177,6 +178,9 @@ public class BedtimeScript : MonoBehaviour
 
     public void TvMoment()
     {
+        if(OptionsV2.PostProcessing)
+            GamePlayCamera.instance.analog.enabled = true;
+
         fog4.DOFade(0, 0);
         ChangeWhiteFade("outBlack", "6.01");
         VideoPlayedInstance.instance.raw.SetActive(false);
