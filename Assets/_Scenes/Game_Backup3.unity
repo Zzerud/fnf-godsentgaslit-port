@@ -20557,8 +20557,8 @@ MonoBehaviour:
   deadBoyfriend: {fileID: 518616834}
   deadBoyfriendAnimator: {fileID: 848795574}
   deadNoise: {fileID: 0}
-  deadTheme: {fileID: 8300000, guid: 2b45074c7ba74404d85d3b73f14dcc9d, type: 3}
-  deadConfirm: {fileID: 8300000, guid: 5b41c62aafe34fd43af2c4bcdabe8313, type: 3}
+  deadTheme: {fileID: 8300000, guid: 82c876325610ddf488dffe64a2131005, type: 3}
+  deadConfirm: {fileID: 8300000, guid: 82c876325610ddf488dffe64a2131005, type: 3}
   deathBlackout: {fileID: 196837090}
   isDead: 0
   respawning: 0
@@ -49160,7 +49160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.16990031, g: 0.4339623, b: 0.19559205, a: 1}
+  m_Color: {r: 0.3382841, g: 0.16862749, b: 0.43529412, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1

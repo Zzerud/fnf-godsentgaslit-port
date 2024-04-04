@@ -368,12 +368,14 @@ public class MainEventSystem : MonoBehaviour
         switch(index)
         {
             case "one":
-                gpCamera.DOShakeRotation(0.2f, -3, 0, 0);
-                gpCamera.orthographicSize -= 0.4f; 
+                gpCamera.DOShakeRotation(0.2f, -3.5f, 0, 0);
+                gpCamera.orthographicSize -= 1.2f;
+                Song.instance.mainCamera.orthographicSize += 0.8f;
                 break;
             case "two":
-                gpCamera.DOShakeRotation(0.2f, 3, 0, 0);
-                gpCamera.orthographicSize -= 0.4f;
+                gpCamera.DOShakeRotation(0.2f, 3.5f, 0, 0);
+                gpCamera.orthographicSize -= 1.2f; 
+                Song.instance.mainCamera.orthographicSize += 0.8f;
                 break;
         }
     }
