@@ -1,3 +1,4 @@
+using Lean.Transition.Method;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,6 +11,8 @@ public class ControllManager : MonoBehaviour
     public ButtonArrow rightArrow;
     public ButtonArrow upArrow;
     public ButtonArrow downArrow;
+
+    public LeanGraphicColor[] colorsEnter, colorsExit; // 0 - left, 1 - right, 2 - up, 3 - down
     public bool isBTN;
     public bool isCalibration = false;
     public static ControllManager Instance { get; private set; }
@@ -28,17 +31,37 @@ public class ControllManager : MonoBehaviour
 
             if (isBTN)
             {
-                leftArrow.GetComponent<Image>().color = new Color(ColorPicker.left.r, ColorPicker.left.g, ColorPicker.left.b, PlayerPrefs.GetFloat("BtnAlpha") / 100f);
-                rightArrow.GetComponent<Image>().color = new Color(ColorPicker.right.r, ColorPicker.right.g, ColorPicker.right.b, PlayerPrefs.GetFloat("BtnAlpha") / 100f);
-                upArrow.GetComponent<Image>().color = new Color(ColorPicker.up.r, ColorPicker.up.g, ColorPicker.up.b, PlayerPrefs.GetFloat("BtnAlpha") / 100f);
-                downArrow.GetComponent<Image>().color = new Color(ColorPicker.down.r, ColorPicker.down.g, ColorPicker.down.b, PlayerPrefs.GetFloat("BtnAlpha") / 100f);
+                float alpha = Song.instance.settings.buttonsAlpha;
+                leftArrow.GetComponent<Image>().color = new Color(ColorPicker.left.r, ColorPicker.left.g, ColorPicker.left.b, alpha / 100f);
+                rightArrow.GetComponent<Image>().color = new Color(ColorPicker.right.r, ColorPicker.right.g, ColorPicker.right.b, alpha / 100f);
+                upArrow.GetComponent<Image>().color = new Color(ColorPicker.up.r, ColorPicker.up.g, ColorPicker.up.b, alpha / 100f);
+                downArrow.GetComponent<Image>().color = new Color(ColorPicker.down.r, ColorPicker.down.g, ColorPicker.down.b, alpha / 100f);
+
+                colorsEnter[0].Data.Value = new Color(ColorPicker.left.r, ColorPicker.left.g, ColorPicker.left.b, ((alpha / 100) - 0.1f));
+                colorsExit[0].Data.Value = new Color(ColorPicker.left.r, ColorPicker.left.g, ColorPicker.left.b, (alpha / 100));
+                colorsEnter[1].Data.Value = new Color(ColorPicker.right.r, ColorPicker.right.g, ColorPicker.right.b, ((alpha / 100) - 0.1f));
+                colorsExit[1].Data.Value = new Color(ColorPicker.right.r, ColorPicker.right.g, ColorPicker.right.b, (alpha / 100));
+                colorsEnter[2].Data.Value = new Color(ColorPicker.up.r, ColorPicker.up.g, ColorPicker.up.b, ((alpha / 100) - 0.1f));
+                colorsExit[2].Data.Value = new Color(ColorPicker.up.r, ColorPicker.up.g, ColorPicker.up.b, (alpha / 100));
+                colorsEnter[3].Data.Value = new Color(ColorPicker.down.r, ColorPicker.down.g, ColorPicker.down.b, ((alpha / 100) - 0.1f));
+                colorsExit[3].Data.Value = new Color(ColorPicker.down.r, ColorPicker.down.g, ColorPicker.down.b, (alpha / 100));
             }
             else
             {
-                leftArrow.GetComponent<Image>().color = new Color(ColorPicker.left.r, ColorPicker.left.g, ColorPicker.left.b, (PlayerPrefs.GetFloat("HitAlpha") / 100));
-                rightArrow.GetComponent<Image>().color = new Color(ColorPicker.right.r, ColorPicker.right.g, ColorPicker.right.b, (PlayerPrefs.GetFloat("HitAlpha") / 100));
-                upArrow.GetComponent<Image>().color = new Color(ColorPicker.up.r, ColorPicker.up.g, ColorPicker.up.b, (PlayerPrefs.GetFloat("HitAlpha") / 100));
-                downArrow.GetComponent<Image>().color = new Color(ColorPicker.down.r, ColorPicker.down.g, ColorPicker.down.b, (PlayerPrefs.GetFloat("HitAlpha") / 100));
+                float alpha = Song.instance.settings.hitboxesAlpha;
+                leftArrow.GetComponent<Image>().color = new Color(ColorPicker.left.r, ColorPicker.left.g, ColorPicker.left.b, (alpha / 100));
+                rightArrow.GetComponent<Image>().color = new Color(ColorPicker.right.r, ColorPicker.right.g, ColorPicker.right.b, (alpha / 100));
+                upArrow.GetComponent<Image>().color = new Color(ColorPicker.up.r, ColorPicker.up.g, ColorPicker.up.b, (alpha / 100));
+                downArrow.GetComponent<Image>().color = new Color(ColorPicker.down.r, ColorPicker.down.g, ColorPicker.down.b, (alpha / 100));
+
+                colorsEnter[0].Data.Value = new Color(ColorPicker.left.r, ColorPicker.left.g, ColorPicker.left.b, ((alpha / 100) - 0.1f));
+                colorsExit[0].Data.Value = new Color(ColorPicker.left.r, ColorPicker.left.g, ColorPicker.left.b, (alpha / 100));
+                colorsEnter[1].Data.Value = new Color(ColorPicker.right.r, ColorPicker.right.g, ColorPicker.right.b, ((alpha / 100) - 0.1f));
+                colorsExit[1].Data.Value = new Color(ColorPicker.right.r, ColorPicker.right.g, ColorPicker.right.b, (alpha / 100));
+                colorsEnter[2].Data.Value = new Color(ColorPicker.up.r, ColorPicker.up.g, ColorPicker.up.b, ((alpha / 100) - 0.1f));
+                colorsExit[2].Data.Value = new Color(ColorPicker.up.r, ColorPicker.up.g, ColorPicker.up.b, (alpha / 100));
+                colorsEnter[3].Data.Value = new Color(ColorPicker.down.r, ColorPicker.down.g, ColorPicker.down.b, ((alpha / 100) - 0.1f));
+                colorsExit[3].Data.Value = new Color(ColorPicker.down.r, ColorPicker.down.g, ColorPicker.down.b, (alpha / 100));
             }
         }
         

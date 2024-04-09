@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Idle
   m_EditorClassIdentifier: 
   animationName: Idle
-  fps: 30
+  fps: 40
   frames:
   - sprite: {fileID: -8707701929941218994, guid: 89f7e16f5865d564d8ed5fa50333bf09,
       type: 3}

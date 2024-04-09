@@ -23,13 +23,6 @@ public class AndroidControllByArrow : MonoBehaviour, IDragHandler
     private void Awake()
     {
         rect = GetComponent<RectTransform>();
-        if (PlayerPrefs.HasKey("posx" + idButton))
-        {
-            rect.anchoredPosition = new Vector2(PlayerPrefs.GetFloat("posx" + idButton), PlayerPrefs.GetFloat("posy" + idButton));
-        }
-        else
-        {
-            rect.anchoredPosition = defaultPosition;
-        }
+        rect.anchoredPosition = new Vector2(OptionsV2.instance.cntrSettings.btnsPos[idButton].posX, OptionsV2.instance.cntrSettings.btnsPos[idButton].posY);
     }
 }

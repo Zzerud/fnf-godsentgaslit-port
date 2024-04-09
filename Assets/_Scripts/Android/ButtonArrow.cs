@@ -3,8 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using Lean.Transition.Method;
 [DefaultExecutionOrder(-5)]
-public class ButtonArrow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler, IPointerExitHandler, IPointerEnterHandler
+public class ButtonArrow : MonoBehaviour
 {
     [HideInInspector]
     public bool thisFrame = false;
@@ -15,7 +16,9 @@ public class ButtonArrow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     private bool trigger2 = false;
     public bool isUp = false;
     private float t;
-    public void OnPointerDown(PointerEventData eventData)
+
+    public LeanGraphicColor colorEnter, colorExit;
+   /* public void OnPointerDown(PointerEventData eventData)
     {
         thisFrame = isPressed = trigger = true;
         t = Time.time;
@@ -26,9 +29,18 @@ public class ButtonArrow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
     {
         thisFrame = isPressed = trigger = true;
         image.CrossFadeColor(Color.grey, 0.1f, true, false);
+    }*/
+    public void OnEnter()
+    {
+        thisFrame = isPressed = trigger = true;
+    }
+    public void OnExit()
+    {
+        thisFrame = isPressed = trigger = false;
+        isUp = trigger2 = true;
     }
 
-    public void OnPointerUp(PointerEventData eventData)
+    /*public void OnPointerUp(PointerEventData eventData)
     {
         thisFrame = isPressed = trigger = false;
         isUp = trigger2 = true;
@@ -41,11 +53,12 @@ public class ButtonArrow : MonoBehaviour, IPointerDownHandler, IPointerUpHandler
         thisFrame = isPressed = trigger = false;
         isUp = trigger2 = true;
         image.CrossFadeColor(Color.white, 0.1f, true, false);
-    }
+    }*/
 
     private void Start()
     {
         image = GetComponent<Image>();
+        // method to change color
     }
     private void Update()
     {

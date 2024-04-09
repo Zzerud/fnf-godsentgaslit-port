@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using Newtonsoft.Json;
 using TMPro;
 using UnityEngine;
@@ -12,7 +13,7 @@ public class OptionsV2 : MonoBehaviour
 {
 
     public GameObject controlPanel;
-    
+    public ControllerSettings cntrSettings = new ControllerSettings();
 
     public void OnEnterControlPanel()
     {
@@ -118,6 +119,15 @@ public class OptionsV2 : MonoBehaviour
         if (!PlayerPrefs.HasKey("HitAlpha")) PlayerPrefs.SetFloat("HitAlpha", 5);
         if (!PlayerPrefs.HasKey("Death")) PlayerPrefs.SetFloat("Death", 0);
         instance = this;
+
+        if(File.Exists(Application.persistentDataPath + "/Control_Settings.json"))
+        {
+            LoadJsonControl();
+        }
+        else
+        {
+            SaveJsonControl();
+        }
     }
     #region Options Windows
     public void ChangeOptionsWindow(GameObject window)
@@ -446,7 +456,6 @@ public class OptionsV2 : MonoBehaviour
         cameraShakeToggle.SetIsOnWithoutNotify(CameraShake);
         debugMenuToggle.SetIsOnWithoutNotify(DebugMenu);
 
-        if (!PlayerPrefs.HasKey("BtnSize")) PlayerPrefs.SetFloat("BtnSize", 17);
         
 
     }
@@ -468,14 +477,23 @@ public class OptionsV2 : MonoBehaviour
                 break;
         }
     }
-    
-    #endregion
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
+    #endregion
+    #region Controls
+    public void LoadJsonControl()
+    {
+        string path = Application.persistentDataPath + "/Control_Settings.json";
+        string data = File.ReadAllText(path);
+        cntrSettings = JsonUtility.FromJson<ControllerSettings>(data);
+        Debug.Log(path);
+    }
+    public void SaveJsonControl()
+    {
+        string data = JsonUtility.ToJson(cntrSettings);
+        string path = Application.persistentDataPath + "/Control_Settings.json";
+        File.WriteAllText(path, data);
+    }
+    #endregion
 }
 
 [Serializable]
@@ -504,4 +522,20 @@ public class MiscOptions
     public bool enablePostProcessing = true;
     public bool enableCameraShake = true;
     public bool enableDebugMenu = false;
+}
+
+[Serializable]
+public class ControllerSettings
+{
+    public float hitboxesAlpha = 50;
+
+    public float buttonsAlpha = 50;
+    public float buttonsSize = 17;
+    public List<ButtonsPositions> btnsPos = new List<ButtonsPositions>();
+}
+[Serializable]
+public class ButtonsPositions
+{
+    public float posX;
+    public float posY;
 }

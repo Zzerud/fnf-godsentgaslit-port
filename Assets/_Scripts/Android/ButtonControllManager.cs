@@ -7,6 +7,7 @@ using static UnityEngine.Rendering.DebugUI;
 
 public class ButtonControllManager : MonoBehaviour
 {
+
     public RectTransform[] btnsTransforms;
     public GameObject[] open_close;
     public RectTransform transMenu;
@@ -43,24 +44,25 @@ public class ButtonControllManager : MonoBehaviour
             for (int i = 0; i < hits.Length; i++)
             {
                 hits[i].CrossFadeAlpha(1, 0, false);
-                hits[i].CrossFadeAlpha((PlayerPrefs.GetFloat("HitAlpha") / 100), 0, false);
+                hits[i].CrossFadeAlpha((OptionsV2.instance.cntrSettings.hitboxesAlpha / 100), 0, false);
             }
-            alphaHitText.text = PlayerPrefs.GetFloat("HitAlpha").ToString("") + "%";
+            alphaHitText.text = OptionsV2.instance.cntrSettings.hitboxesAlpha.ToString("") + "%";
+            alphaHitSlider.value = OptionsV2.instance.cntrSettings.hitboxesAlpha;
         }
         else
         {
             foreach (GameObject j in menuHits) j.SetActive(false);
             foreach (GameObject t in menuBtns) t.SetActive(true);
             btnPreview.CrossFadeAlpha(1, 0, false);
-            btnPreview.CrossFadeAlpha((PlayerPrefs.GetFloat("BtnAlpha") / 100), 0, false);
-            alphaBtnText.text = PlayerPrefs.GetFloat("BtnAlpha").ToString("") + "%";
-            alphaBtnSlider.value = PlayerPrefs.GetFloat("BtnAlpha");
+            btnPreview.CrossFadeAlpha((OptionsV2.instance.cntrSettings.buttonsAlpha / 100), 0, false);
+            alphaBtnText.text = OptionsV2.instance.cntrSettings.buttonsAlpha.ToString("") + "%";
+            alphaBtnSlider.value = OptionsV2.instance.cntrSettings.buttonsAlpha;
 
-            sizeBtnSlider.value = PlayerPrefs.GetFloat("BtnSize");
-            sizeBtnText.text = ((PlayerPrefs.GetFloat("BtnSize") / sizeBtnSlider.maxValue) * 100f).ToString("") + "%";
+            sizeBtnSlider.value = OptionsV2.instance.cntrSettings.buttonsSize;
+            sizeBtnText.text = ((OptionsV2.instance.cntrSettings.buttonsSize / sizeBtnSlider.maxValue) * 100f).ToString("") + "%";
             for (int i = 0; i < btnsTransforms.Length; i++)
             {
-                btnsTransforms[i].sizeDelta = new Vector2((PlayerPrefs.GetFloat("BtnSize") * 10), (PlayerPrefs.GetFloat("BtnSize") * 10));
+                btnsTransforms[i].sizeDelta = new Vector2((OptionsV2.instance.cntrSettings.buttonsSize * 10), (OptionsV2.instance.cntrSettings.buttonsSize * 10));
             }
         }        
     }
@@ -77,9 +79,10 @@ public class ButtonControllManager : MonoBehaviour
     {
         for (int i = 0; i < 4; i++)
         {
-            PlayerPrefs.SetFloat("posx" + i, btnsTransforms[i].anchoredPosition.x);
-            PlayerPrefs.SetFloat("posy" + i, btnsTransforms[i].anchoredPosition.y);
+            OptionsV2.instance.cntrSettings.btnsPos[i].posX = btnsTransforms[i].anchoredPosition.x;
+            OptionsV2.instance.cntrSettings.btnsPos[i].posY = btnsTransforms[i].anchoredPosition.y;
         }
+        OptionsV2.instance.SaveJsonControl();
         gameObject.SetActive(false);
     }
 
@@ -103,30 +106,30 @@ public class ButtonControllManager : MonoBehaviour
     }
     public void ChangeSizeButton(float value)
     {
-        PlayerPrefs.SetFloat("BtnSize", value);
-        PlayerPrefs.Save();
+        OptionsV2.instance.cntrSettings.buttonsSize = value;
 
         sizeBtnText.text = ((value / sizeBtnSlider.maxValue) * 100f).ToString("") + "%";
         for (int i = 0; i < btnsTransforms.Length; i++)
         {
             btnsTransforms[i].sizeDelta = new Vector2((value * 10), (value * 10));
         }
+        OptionsV2.instance.SaveJsonControl();
     }
     public void ChangeAlphaButton(float value)
     {
-        PlayerPrefs.SetFloat("BtnAlpha", value);
-        PlayerPrefs.Save();
+        OptionsV2.instance.cntrSettings.buttonsAlpha = value;
 
         btnPreview.CrossFadeAlpha((value / 100f), 0, false);
         alphaBtnText.text = value.ToString("") + "%";
+        OptionsV2.instance.SaveJsonControl();
     }
     public void ChangeAlphaHit(float value)
     {
-        PlayerPrefs.SetFloat("HitAlpha", value);
-        PlayerPrefs.Save();
+        OptionsV2.instance.cntrSettings.hitboxesAlpha = value;
 
-        foreach (Image hit in hits) hit.CrossFadeAlpha((PlayerPrefs.GetFloat("HitAlpha") / 100), 0, false);
+        foreach (Image hit in hits) hit.CrossFadeAlpha((value / 100), 0, false);
 
         alphaHitText.text = value.ToString("") + "%";
+        OptionsV2.instance.SaveJsonControl();
     }
 }

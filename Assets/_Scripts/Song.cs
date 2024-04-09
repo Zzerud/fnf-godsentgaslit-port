@@ -23,6 +23,7 @@ using Random = UnityEngine.Random;
 
 public class Song : MonoBehaviour
 {
+    [HideInInspector] public ControllerSettings settings;
     [HideInInspector] public bool isActiveShake;
     public VideoClip clipRetry;
     public VideoPlayer deadPlayer;
@@ -291,6 +292,12 @@ public class Song : MonoBehaviour
     public static WeekSong currentSong;
     #endregion
 
+    private void Awake()
+    {
+        string path = Application.persistentDataPath + "/Control_Settings.json";
+        string data = File.ReadAllText(path);
+        settings = JsonUtility.FromJson<ControllerSettings>(data);
+    }
     private void Start()
     {
 

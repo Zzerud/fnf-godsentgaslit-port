@@ -10,15 +10,8 @@ public class ButtonPos : MonoBehaviour
     private void Start()
     {
         rect = GetComponent<RectTransform>();
-        if(PlayerPrefs.HasKey("posx" + id) && PlayerPrefs.HasKey("posy" + id))
-        {
-            rect.anchoredPosition = new Vector2(PlayerPrefs.GetFloat("posx" + id), PlayerPrefs.GetFloat("posy" + id));
-        }
-        else
-        {
-            rect.anchoredPosition = defPos;
-        }
+        rect.anchoredPosition = new Vector2(Song.instance.settings.btnsPos[id].posX, Song.instance.settings.btnsPos[id].posY);
 
-        rect.sizeDelta = new Vector2(PlayerPrefs.GetFloat("BtnSize") * 10, PlayerPrefs.GetFloat("BtnSize") * 10);
+        rect.sizeDelta = new Vector2(Song.instance.settings.buttonsSize * 10, Song.instance.settings.buttonsSize * 10);
     }
 }
